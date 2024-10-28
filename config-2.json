@@ -1,0 +1,4829 @@
+{
+	"data": {
+		"map": {
+			"viewOptions": {
+				"zoom": 1,
+				"center": [
+					0,
+					0
+				],
+				"projection": "EPSG:3857"
+			},
+			"background_color": {
+				"a": 100,
+				"b": 255,
+				"g": 255,
+				"r": 255
+			},
+			"change_layer_opacity": true,
+			"change_layers_order": true,
+			"change_projection": true,
+			"change_layer_scale": true,
+			"graticule": {
+				"color": {
+					"a": 0.4,
+					"b": 69,
+					"g": 140,
+					"r": 13
+				},
+				"visible": true,
+				"labelColor": {
+					"a": 1,
+					"b": 45,
+					"g": 25,
+					"r": 8
+				}
+			}
+		},
+		"layers": [
+			{
+				"id": "68ee2a2a-2f49-4a1e-82fc-febe525cac70",
+				"type": "Basemap",
+				"order": -2,
+				"title": "Yandex",
+				"visible": true,
+				"previewImg": "/static/media/yandex.7c131cce3a6eff7e7ec8.png",
+				"sourceType": "Yandex"
+			},
+			{
+				"id": "15b92431-5dbd-4506-9295-d6f7145fe868",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"minx": -180,
+					"miny": 41.185185,
+					"maxx": 180,
+					"maxy": 82.054654
+				},
+				"name": "builder_standard_russian_oopt_federal",
+				"type": "VectorTile",
+				"order": 0,
+				"style": {
+					"type": "ByAttribute",
+					"values": [
+						{
+							"id": "5f494088-b062-4674-9d7b-6de76bba52ad",
+							"type": "Value",
+							"alias": "Государственный природный заказник",
+							"value": "государственный природный заказник",
+							"symbol": {
+								"fill": {
+									"type": "solid",
+									"color": {
+										"a": 1,
+										"b": 145,
+										"g": 111,
+										"r": 255
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "1c90e766-78ff-4782-a275-8a907c3e649e",
+							"type": "Value",
+							"alias": "Государственный природный заповедник",
+							"value": "государственный природный заповедник",
+							"symbol": {
+								"fill": {
+									"type": "solid",
+									"color": {
+										"a": 1,
+										"b": 116,
+										"g": 139,
+										"r": 0
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "e9a3038f-130d-488b-adb8-163fc8987db9",
+							"type": "Value",
+							"alias": "Дендрологический парк и ботанический сад",
+							"value": "дендрологический парк и ботанический сад",
+							"symbol": {
+								"fill": {
+									"type": "solid",
+									"color": {
+										"a": 1,
+										"b": 210,
+										"g": 115,
+										"r": 44
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "daa68e4f-7cf9-427d-9645-c65f89947957",
+							"type": "Value",
+							"alias": "Национальный парк",
+							"value": "национальный парк",
+							"symbol": {
+								"fill": {
+									"type": "solid",
+									"color": {
+										"a": 1,
+										"b": 177,
+										"g": 93,
+										"r": 214
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "93c8ee22-5bc0-487b-bf9b-83fc3ddd59b2",
+							"type": "Value",
+							"alias": "Памятник природы",
+							"value": "памятник природы",
+							"symbol": {
+								"fill": {
+									"type": "solid",
+									"color": {
+										"a": 1,
+										"b": 167,
+										"g": 201,
+										"r": 0
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						}
+					],
+					"fieldName": "category",
+					"defaultSymbol": {
+						"fill": {
+							"type": "solid",
+							"color": {
+								"a": 1,
+								"b": 228,
+								"g": 155,
+								"r": 134
+							}
+						},
+						"stroke": {
+							"color": {
+								"a": 1,
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"width": 1
+						}
+					},
+					"symbolValueType": "Value",
+					"removeDefaultFromLegend": true
+				},
+				"title": "ООПТ РФ (Федеральные)",
+				"fields": {
+					"id": {
+						"name": "id",
+						"alias": "id",
+						"order": 7,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"area": {
+						"name": "area",
+						"alias": "Площадь, га",
+						"order": 5,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"date": {
+						"name": "date",
+						"alias": "Дата создания",
+						"order": 4,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"geom": {
+						"name": "geom",
+						"alias": "geom",
+						"order": 0,
+						"binding": "org.locationtech.jts.geom.Geometry",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"link": {
+						"name": "link",
+						"alias": "Ссылка",
+						"order": 6,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"name": {
+						"name": "name",
+						"alias": "Название",
+						"order": 0,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"value": {
+						"name": "value",
+						"alias": "Значение",
+						"order": 1,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"subject": {
+						"name": "subject",
+						"alias": "Субъект",
+						"order": 3,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"category": {
+						"name": "category",
+						"alias": "Категория",
+						"order": 2,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					}
+				},
+				"opacity": 0.19999999999999996,
+				"visible": true,
+				"controls": {
+					"Labels": {
+						"id": "i95Z-dBnJ2ScKZ-dZupBy",
+						"type": "Labels",
+						"title": "Подписи",
+						"config": {
+							"zoom": [
+								1,
+								28
+							],
+							"color": {
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"field": [
+								{
+									"key": "t-MHUKDTcumXZj3dWz7G4",
+									"type": "field",
+									"value": "name"
+								}
+							],
+							"offsetX": 0,
+							"offsetY": 0,
+							"fontName": "Arial",
+							"fontSize": 14,
+							"textAlign": "center",
+							"outlineColor": {
+								"a": 1,
+								"b": 255,
+								"g": 255,
+								"r": 255
+							},
+							"outlineWidth": 2,
+							"textBaseLine": "middle"
+						},
+						"enabled": false
+					},
+					"Filters": {
+						"id": "MDsS-9YIxHMYKtqAa58Pb",
+						"type": "Filters",
+						"title": "Filter",
+						"filters": {
+							"fWIQj8h7STXtOr3snUnty": {
+								"id": "fWIQj8h7STXtOr3snUnty",
+								"type": "Checkbox",
+								"field": "subject",
+								"order": 2,
+								"title": "Субъект",
+								"values": {
+									"-Ju-CDwyLHLCdjMXEiDNi": {
+										"id": "-Ju-CDwyLHLCdjMXEiDNi",
+										"alias": "Еврейская автономная область",
+										"order": 11,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Еврейская автономная область"
+									},
+									"1KAXzJCyfs_tzy1XSnPwp": {
+										"id": "1KAXzJCyfs_tzy1XSnPwp",
+										"alias": "Республика Саха (Якутия)",
+										"order": 53,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Саха (Якутия)"
+									},
+									"2Oj87YmEeIiqnqNQM-KGP": {
+										"id": "2Oj87YmEeIiqnqNQM-KGP",
+										"alias": "Томская область",
+										"order": 70,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Томская область"
+									},
+									"2qeyYv18_s5BWHLsVdcBB": {
+										"id": "2qeyYv18_s5BWHLsVdcBB",
+										"alias": "Пензенская область",
+										"order": 37,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Пензенская область"
+									},
+									"33b7QVARe_VStdWUD9-70": {
+										"id": "33b7QVARe_VStdWUD9-70",
+										"alias": "Республика Карелия",
+										"order": 48,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Карелия"
+									},
+									"3Z6ccFNlifKBWzSXFwDEQ": {
+										"id": "3Z6ccFNlifKBWzSXFwDEQ",
+										"alias": "Республика Северная Осетия — Алания",
+										"order": 54,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Северная Осетия — Алания"
+									},
+									"3f4o4VOMy9skFz2cYFxQO": {
+										"id": "3f4o4VOMy9skFz2cYFxQO",
+										"alias": "Омская область",
+										"order": 34,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Омская область"
+									},
+									"55hPgaVfxmxglEQupTtX3": {
+										"id": "55hPgaVfxmxglEQupTtX3",
+										"alias": "Республика Хакасия",
+										"order": 57,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Хакасия"
+									},
+									"5GjreNKXQ12xJ-dc6WBRr": {
+										"id": "5GjreNKXQ12xJ-dc6WBRr",
+										"alias": "Ханты-Мансийский АО — Югра",
+										"order": 76,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ханты-Мансийский автономный округ — Югра"
+									},
+									"8OaOdRGMcOG25-hTSird_": {
+										"id": "8OaOdRGMcOG25-hTSird_",
+										"alias": "Ненецкий АО",
+										"order": 30,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ненецкий автономный округ"
+									},
+									"AELW4oXyF5sNOndb1qzaB": {
+										"id": "AELW4oXyF5sNOndb1qzaB",
+										"alias": "Кабардино-Балкарская Республика",
+										"order": 14,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Кабардино-Балкарская Республика"
+									},
+									"APobaEwh0GV4-68iK70jI": {
+										"id": "APobaEwh0GV4-68iK70jI",
+										"alias": "Республика Тыва",
+										"order": 56,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Тыва"
+									},
+									"AfmcqlydLdXgsH9wRSoiH": {
+										"id": "AfmcqlydLdXgsH9wRSoiH",
+										"alias": "Республика Калмыкия",
+										"order": 47,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Калмыкия"
+									},
+									"Aownfp7WKHoh8wpcqieST": {
+										"id": "Aownfp7WKHoh8wpcqieST",
+										"alias": "Тверская область",
+										"order": 68,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Тверская область"
+									},
+									"BwSy0_JnpGTMEacsEEaIB": {
+										"id": "BwSy0_JnpGTMEacsEEaIB",
+										"alias": "Тамбовская область",
+										"order": 67,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Тамбовская область"
+									},
+									"DDQczrRRbT300MPkPbNQO": {
+										"id": "DDQczrRRbT300MPkPbNQO",
+										"alias": "Ростовская область",
+										"order": 58,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ростовская область"
+									},
+									"Dj_AZ7WjoOLX_BC-w7h3Q": {
+										"id": "Dj_AZ7WjoOLX_BC-w7h3Q",
+										"alias": "Вологодская область",
+										"order": 9,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Вологодская область"
+									},
+									"Dl-0rqhqUE_ACUnntDqH8": {
+										"id": "Dl-0rqhqUE_ACUnntDqH8",
+										"alias": "Республика Башкортостан",
+										"order": 43,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Башкортостан"
+									},
+									"EMJPF5mK3TtEEw_Q2Ngj8": {
+										"id": "EMJPF5mK3TtEEw_Q2Ngj8",
+										"alias": "Белгородская область",
+										"order": 5,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Белгородская область"
+									},
+									"EXDe2hW6TVH4GUlA7Uef1": {
+										"id": "EXDe2hW6TVH4GUlA7Uef1",
+										"alias": "Ленинградская область",
+										"order": 25,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ленинградская область"
+									},
+									"EY9eB-SIiOaI_xSNXiupZ": {
+										"id": "EY9eB-SIiOaI_xSNXiupZ",
+										"alias": "Республика Дагестан",
+										"order": 45,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Дагестан"
+									},
+									"FUZdmcNGZEkcvSSPTQnb8": {
+										"id": "FUZdmcNGZEkcvSSPTQnb8",
+										"alias": "г. Москва",
+										"order": 83,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "г. Москва"
+									},
+									"G2_4t9pJ8K9JhWuOBPL4E": {
+										"id": "G2_4t9pJ8K9JhWuOBPL4E",
+										"alias": "Республика Ингушетия",
+										"order": 46,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Ингушетия"
+									},
+									"GYlrwLaPWcUYZUNEqPfYg": {
+										"id": "GYlrwLaPWcUYZUNEqPfYg",
+										"alias": "Орловская область",
+										"order": 36,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Орловская область"
+									},
+									"H5Gu8AU2M-0v8xdTlrENo": {
+										"id": "H5Gu8AU2M-0v8xdTlrENo",
+										"alias": "Томская область, Новосибирская область",
+										"order": 71,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Томская область,Новосибирская область"
+									},
+									"HUAcPLfBM_a8GqR_YUCXR": {
+										"id": "HUAcPLfBM_a8GqR_YUCXR",
+										"alias": "Московская область",
+										"order": 28,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Московская область"
+									},
+									"IfLDblCK8F5J6OLXkwnuz": {
+										"id": "IfLDblCK8F5J6OLXkwnuz",
+										"alias": "Ульяновская область",
+										"order": 74,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ульяновская область"
+									},
+									"JD-_fFYbaLHJujrIkM0bb": {
+										"id": "JD-_fFYbaLHJujrIkM0bb",
+										"alias": "Приморский край",
+										"order": 39,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Приморский край"
+									},
+									"Jhkd13qT-HhyV1w65bJvB": {
+										"id": "Jhkd13qT-HhyV1w65bJvB",
+										"alias": "Республика Адыгея",
+										"order": 41,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Адыгея"
+									},
+									"Krca78CiE7KgEbV6BdZ4A": {
+										"id": "Krca78CiE7KgEbV6BdZ4A",
+										"alias": "г. Санкт-Петербург",
+										"order": 84,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "г. Санкт-Петербург"
+									},
+									"LAIVrD8lhQ-xZ4RWDlfda": {
+										"id": "LAIVrD8lhQ-xZ4RWDlfda",
+										"alias": "Красноярский край",
+										"order": 23,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Красноярский край"
+									},
+									"Mqv-RdTg0RpdnmOl9qmCe": {
+										"id": "Mqv-RdTg0RpdnmOl9qmCe",
+										"alias": "Магаданская область",
+										"order": 27,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Магаданская область"
+									},
+									"OGy5h18XyCs_9doRHKj_d": {
+										"id": "OGy5h18XyCs_9doRHKj_d",
+										"alias": "Самарская область",
+										"order": 60,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Самарская область"
+									},
+									"OenfIAUWCnQDbLddGJ38j": {
+										"id": "OenfIAUWCnQDbLddGJ38j",
+										"alias": "Республика Алтай",
+										"order": 42,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Алтай"
+									},
+									"OgJQEz7zRX8Cc4DIGeU9D": {
+										"id": "OgJQEz7zRX8Cc4DIGeU9D",
+										"alias": "Республика Мордовия",
+										"order": 52,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Мордовия"
+									},
+									"Ok_kLD3eyEVL1duMXZ2fX": {
+										"id": "Ok_kLD3eyEVL1duMXZ2fX",
+										"alias": "Нижегородская область",
+										"order": 31,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Нижегородская область"
+									},
+									"OpputxHPwAsIHswvHAe4u": {
+										"id": "OpputxHPwAsIHswvHAe4u",
+										"alias": "Смоленская область",
+										"order": 65,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Смоленская область"
+									},
+									"Q3ldmP0g68ioHj-pugyTN": {
+										"id": "Q3ldmP0g68ioHj-pugyTN",
+										"alias": "Рязанская область",
+										"order": 59,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Рязанская область"
+									},
+									"QEM3QgnsLVYi6lCa4CyM9": {
+										"id": "QEM3QgnsLVYi6lCa4CyM9",
+										"alias": "Ямало-Ненецкий АО",
+										"order": 81,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ямало-Ненецкий автономный округ"
+									},
+									"QQFUwIwFyff0_Wce0K54H": {
+										"id": "QQFUwIwFyff0_Wce0K54H",
+										"alias": "Чукотский АО",
+										"order": 80,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Чукотский автономный округ"
+									},
+									"QbIjSIC9Dd96vabJQHkXA": {
+										"id": "QbIjSIC9Dd96vabJQHkXA",
+										"alias": "Костромская область",
+										"order": 21,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Костромская область"
+									},
+									"SzpmYLloTcu3svUuEeAdH": {
+										"id": "SzpmYLloTcu3svUuEeAdH",
+										"alias": "Самарская область, Оренбургская область",
+										"order": 61,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Самарская область,Оренбургская область"
+									},
+									"TJbs3Uuyr3s0UWHz20fY4": {
+										"id": "TJbs3Uuyr3s0UWHz20fY4",
+										"alias": "Кировская область",
+										"order": 20,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Кировская область"
+									},
+									"WQ__g0qoOA1uT6n4A5dyT": {
+										"id": "WQ__g0qoOA1uT6n4A5dyT",
+										"alias": "Ставропольский край",
+										"order": 66,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ставропольский край"
+									},
+									"WrQMlDP2z0PR3YaYkkYxl": {
+										"id": "WrQMlDP2z0PR3YaYkkYxl",
+										"alias": "Липецкая область",
+										"order": 26,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Липецкая область"
+									},
+									"XjFfO0vVCkwsY18Ue8TrW": {
+										"id": "XjFfO0vVCkwsY18Ue8TrW",
+										"alias": "Удмуртская Республика",
+										"order": 73,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Удмуртская Республика"
+									},
+									"Xp3bu_HTclvSvZSbuFwS1": {
+										"id": "Xp3bu_HTclvSvZSbuFwS1",
+										"alias": "Калининградская область",
+										"order": 15,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Калининградская область"
+									},
+									"YzeXmVrElK6RHikHczFHE": {
+										"id": "YzeXmVrElK6RHikHczFHE",
+										"alias": "Республика Марий Эл",
+										"order": 51,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Марий Эл"
+									},
+									"Z0ZYSA4RC7EWs4OnxxwpD": {
+										"id": "Z0ZYSA4RC7EWs4OnxxwpD",
+										"alias": "Новгородская область",
+										"order": 32,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Новгородская область"
+									},
+									"ZXYEgLa0tc_nLXRwiTfcK": {
+										"id": "ZXYEgLa0tc_nLXRwiTfcK",
+										"alias": "Астраханская область",
+										"order": 4,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Астраханская область"
+									},
+									"ZYCChhZhQNFEiO36ivsQD": {
+										"id": "ZYCChhZhQNFEiO36ivsQD",
+										"alias": "Иркутская область",
+										"order": 13,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Иркутская область"
+									},
+									"Z_Q8AxWABx4VqUeAZ4xyF": {
+										"id": "Z_Q8AxWABx4VqUeAZ4xyF",
+										"alias": "Волгоградская область",
+										"order": 8,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Волгоградская область"
+									},
+									"ZfNihmtfSst3SRgVcEDWk": {
+										"id": "ZfNihmtfSst3SRgVcEDWk",
+										"alias": "Калужская область",
+										"order": 16,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Калужская область"
+									},
+									"Zn8WEIivArbhmhOzxHnSC": {
+										"id": "Zn8WEIivArbhmhOzxHnSC",
+										"alias": "Ярославская область",
+										"order": 82,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ярославская область"
+									},
+									"a-39BbM2_-8ITk6eOR-el": {
+										"id": "a-39BbM2_-8ITk6eOR-el",
+										"alias": "Саратовская область",
+										"order": 62,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Саратовская область"
+									},
+									"aWQFG6sc58TG1YgdBxKdV": {
+										"id": "aWQFG6sc58TG1YgdBxKdV",
+										"alias": "Челябинская область, Республика Башкортостан",
+										"order": 78,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Челябинская область,Республика Башкортостан"
+									},
+									"ae-FBwfvdd-5sPE81JHW0": {
+										"id": "ae-FBwfvdd-5sPE81JHW0",
+										"alias": "Амурская область",
+										"order": 2,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Амурская область"
+									},
+									"aoTkij7MQ9zP-DjfojkBU": {
+										"id": "aoTkij7MQ9zP-DjfojkBU",
+										"alias": "Архангельская область",
+										"order": 3,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Архангельская область"
+									},
+									"bE6u87FHqwdLqtj0wE3yE": {
+										"id": "bE6u87FHqwdLqtj0wE3yE",
+										"alias": "Брянская область",
+										"order": 6,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Брянская область"
+									},
+									"bcztu_7GeIv233ps6wPGo": {
+										"id": "bcztu_7GeIv233ps6wPGo",
+										"alias": "Сахалинская область",
+										"order": 63,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Сахалинская область"
+									},
+									"fWaYv2T0jxPq7oXG02-wo": {
+										"id": "fWaYv2T0jxPq7oXG02-wo",
+										"alias": "Республика Крым",
+										"order": 50,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Крым"
+									},
+									"ggMROAytGwMq4o59kiIGF": {
+										"id": "ggMROAytGwMq4o59kiIGF",
+										"alias": "Камчатский край",
+										"order": 17,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Камчатский край"
+									},
+									"hXkSqvcAOUo_i4vpeME3-": {
+										"id": "hXkSqvcAOUo_i4vpeME3-",
+										"alias": "Республика Бурятия",
+										"order": 44,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Бурятия"
+									},
+									"hdpPf0je7ws6T4pydHVIQ": {
+										"id": "hdpPf0je7ws6T4pydHVIQ",
+										"alias": "Чувашская Республика",
+										"order": 79,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Чувашская Республика"
+									},
+									"i18HeRpiIxdmC3z5FHzAf": {
+										"id": "i18HeRpiIxdmC3z5FHzAf",
+										"alias": "Мурманская область",
+										"order": 29,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Мурманская область"
+									},
+									"jdbDA_7t0a4IT6ryzj5iZ": {
+										"id": "jdbDA_7t0a4IT6ryzj5iZ",
+										"alias": "Тверская область, Московская область",
+										"order": 69,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Тверская область,Московская область"
+									},
+									"kWaG8BnqnN30taQJGzj1S": {
+										"id": "kWaG8BnqnN30taQJGzj1S",
+										"alias": "Забайкальский край",
+										"order": 12,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Забайкальский край"
+									},
+									"ksQqReasu6pwE2YlkymKN": {
+										"id": "ksQqReasu6pwE2YlkymKN",
+										"alias": "Хабаровский край",
+										"order": 75,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Хабаровский край"
+									},
+									"lHxMJ54dmj6Gka0XCJc2X": {
+										"id": "lHxMJ54dmj6Gka0XCJc2X",
+										"alias": "Кемеровская область",
+										"order": 19,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Кемеровская область"
+									},
+									"llQLKGwjqOTmAuSOMrKlZ": {
+										"id": "llQLKGwjqOTmAuSOMrKlZ",
+										"alias": "Воронежская область",
+										"order": 10,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Воронежская область"
+									},
+									"nr82jYIqUEeJ4P2qEf6C0": {
+										"id": "nr82jYIqUEeJ4P2qEf6C0",
+										"alias": "Челябинская область",
+										"order": 77,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Челябинская область"
+									},
+									"oQYPuhAH8gA75R430Gjpw": {
+										"id": "oQYPuhAH8gA75R430Gjpw",
+										"alias": "Пермский край",
+										"order": 38,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Пермский край"
+									},
+									"oYq-SeMTy0RkPr912TzEh": {
+										"id": "oYq-SeMTy0RkPr912TzEh",
+										"alias": "Оренбургская область",
+										"order": 35,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Оренбургская область"
+									},
+									"ogLWmXUof-O7J4QRR37tK": {
+										"id": "ogLWmXUof-O7J4QRR37tK",
+										"alias": "Свердловская область",
+										"order": 64,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Свердловская область"
+									},
+									"qf9iu56MYT2GM-b2vKpkw": {
+										"id": "qf9iu56MYT2GM-b2vKpkw",
+										"alias": "Новосибирская область",
+										"order": 33,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Новосибирская область"
+									},
+									"s2Mu5650MHEj4wyRbFiyL": {
+										"id": "s2Mu5650MHEj4wyRbFiyL",
+										"alias": "Республика Коми",
+										"order": 49,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Коми"
+									},
+									"se9bSUPvcO03IV_8prMIo": {
+										"id": "se9bSUPvcO03IV_8prMIo",
+										"alias": "Краснодарский край",
+										"order": 22,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Краснодарский край"
+									},
+									"siq3nJcYXxC4-cDtK9wDy": {
+										"id": "siq3nJcYXxC4-cDtK9wDy",
+										"alias": "Владимирская область",
+										"order": 7,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Владимирская область"
+									},
+									"ueWWvV2SP4Zxlo2E4PfJ1": {
+										"id": "ueWWvV2SP4Zxlo2E4PfJ1",
+										"alias": "Алтайский край",
+										"order": 1,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Алтайский край"
+									},
+									"vPDzDXXdBSyfwS_22O2JN": {
+										"id": "vPDzDXXdBSyfwS_22O2JN",
+										"alias": "Карачаево-Черкесская Республика",
+										"order": 18,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Карачаево-Черкесская Республика"
+									},
+									"vtpPyYb2c5PrY7XRyjRBF": {
+										"id": "vtpPyYb2c5PrY7XRyjRBF",
+										"alias": "Курская область",
+										"order": 24,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Курская область"
+									},
+									"wUCrCPHFFUBRUQzih73Ja": {
+										"id": "wUCrCPHFFUBRUQzih73Ja",
+										"alias": "Республика Татарстан",
+										"order": 55,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Татарстан"
+									},
+									"xekqdfJghctBEuRqlCsBW": {
+										"id": "xekqdfJghctBEuRqlCsBW",
+										"alias": "Псковская область",
+										"order": 40,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Псковская область"
+									},
+									"zAWp3NzLxsrd2nbL9JuOc": {
+										"id": "zAWp3NzLxsrd2nbL9JuOc",
+										"alias": "Тюменская область",
+										"order": 72,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Тюменская область"
+									},
+									"ALL_OTHER_FILTER_VALUES": {
+										"id": "ALL_OTHER_FILTER_VALUES",
+										"alias": "others",
+										"order": 10000,
+										"checked": false,
+										"visible": false,
+										"fieldValue": "ALL_OTHER_FILTER_VALUES"
+									}
+								}
+							},
+							"of3iPIvUZWpR8FhldcIbz": {
+								"id": "of3iPIvUZWpR8FhldcIbz",
+								"type": "Range",
+								"field": "area",
+								"order": 1,
+								"title": "Площадь, га",
+								"values": {
+									"config": {
+										"max": 9000000,
+										"min": 0
+									},
+									"values": {
+										"max": 9000000,
+										"min": 0
+									}
+								}
+							},
+							"zb_2B49JuVZzt8ZdLPw8K": {
+								"id": "zb_2B49JuVZzt8ZdLPw8K",
+								"type": "Checkbox",
+								"field": "category",
+								"order": 0,
+								"title": "Категория",
+								"values": {
+									"67EiV-ORPd776nIf2_L3m": {
+										"id": "67EiV-ORPd776nIf2_L3m",
+										"alias": "Государственный природный заповедник",
+										"order": 2,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "государственный природный заповедник"
+									},
+									"AGxh485S0k6ak6zBQioRL": {
+										"id": "AGxh485S0k6ak6zBQioRL",
+										"alias": "Национальный парк",
+										"order": 4,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "национальный парк"
+									},
+									"DAGnCtJs2rVslifTUzIWz": {
+										"id": "DAGnCtJs2rVslifTUzIWz",
+										"alias": "Дендрологический парк и ботанический сад",
+										"order": 3,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "дендрологический парк и ботанический сад"
+									},
+									"b7QHUOSAh2uHygUCBxWvg": {
+										"id": "b7QHUOSAh2uHygUCBxWvg",
+										"alias": "Государственный природный заказник",
+										"order": 1,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "государственный природный заказник"
+									},
+									"z50XaottJASCoMCj4f6in": {
+										"id": "z50XaottJASCoMCj4f6in",
+										"alias": "Памятник природы",
+										"order": 5,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "памятник природы"
+									},
+									"ALL_OTHER_FILTER_VALUES": {
+										"id": "ALL_OTHER_FILTER_VALUES",
+										"alias": "others",
+										"order": 10000,
+										"checked": false,
+										"visible": false,
+										"fieldValue": "ALL_OTHER_FILTER_VALUES"
+									}
+								}
+							}
+						}
+					}
+				},
+				"geometry": {
+					"type": "MultiPolygon",
+					"fieldName": "geom"
+				},
+				"identify": true,
+				"namespace": "gis",
+				"showLegend": true,
+				"description": "Полигональный слой ООПТ РФ\r\nПоля:\r\nname – Название ООПТ\r\nvalue – Значение ООПТ\r\ncategory – Категория ООПТ\r\nsubject – Местоположение ООПТ в структуре административно-территориального деления\r\ndate – Дата создания\r\narea – Общая площадь ООПТ в гектарах\r\nlink – Ссылка на ООПТ на сайте http://www.oopt.aari.ru/",
+				"resourceUrl": "http://gis.flexatel.xyz/geoserver/rest/workspaces/gis/datastores/db/featuretypes/builder_standard_russian_oopt_federal.json",
+				"geoserverUrl": "https://gis.flexatel.xyz/geoserver",
+				"displayFieldName": "name"
+			},
+			{
+				"id": "842900aa-2ec7-4ea7-960c-4e4de5e920ca",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"maxx": 179.392959,
+					"maxy": 81.805464,
+					"minx": -179.465439,
+					"miny": 41.409472
+				},
+				"name": "builder_base_russian_cities",
+				"type": "VectorTile",
+				"order": 2,
+				"style": {
+					"type": "CommonSymbol",
+					"symbol": {
+						"fill": {
+							"color": {
+								"a": 1,
+								"b": 27,
+								"g": 2,
+								"r": 208
+							}
+						},
+						"image": {
+							"size": 15,
+							"type": "Pin",
+							"imageString": "data:image/svg+xml;utf8,%3Csvg%20height%3D%2215%22%20width%3D%2215%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M11.9999%200.5C6.7499%200.5%202.3999%204.525%202.3999%209.26875C2.3999%2014.875%208.6999%2020.4812%2011.0999%2023.0687C11.2499%2023.3562%2011.6999%2023.5%2011.9999%2023.5C12.2999%2023.5%2012.7499%2023.3562%2012.8999%2023.0687C15.2999%2020.4812%2021.5999%2014.875%2021.5999%209.26875C21.5999%204.525%2017.2499%200.5%2011.9999%200.5ZM11.9999%2012.8625C10.0499%2012.8625%208.3999%2011.2812%208.3999%209.4125C8.3999%207.54375%2010.0499%205.9625%2011.9999%205.9625C13.9499%205.9625%2015.5999%207.54375%2015.5999%209.4125C15.5999%2011.2812%2013.9499%2012.8625%2011.9999%2012.8625Z%22%20fill%3D%22%23d0021b%22%20stroke%3D%22%23000000%22%20stroke-width%3D%221%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+						},
+						"stroke": {
+							"color": {
+								"a": 1,
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"width": 1
+						}
+					}
+				},
+				"title": "Города РФ на 2021 год",
+				"fields": {
+					"id": {
+						"name": "id",
+						"alias": "id",
+						"order": 3,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"geom": {
+						"name": "geom",
+						"alias": "geom",
+						"order": 0,
+						"binding": "org.locationtech.jts.geom.Geometry",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"name_eng": {
+						"name": "name_eng",
+						"alias": "Название на английском",
+						"order": 2,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"name_rus": {
+						"name": "name_rus",
+						"alias": "Название",
+						"order": 1,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"objectid": {
+						"name": "objectid",
+						"alias": "objectid",
+						"order": 0,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					}
+				},
+				"visible": false,
+				"controls": {
+					"Labels": {
+						"id": "5JUjvRM1ngdXal-VAhosC",
+						"type": "Labels",
+						"title": "Подписи",
+						"config": {
+							"bold": true,
+							"zoom": [
+								1,
+								28
+							],
+							"color": {
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"field": [
+								{
+									"type": "field",
+									"value": "name_rus"
+								}
+							],
+							"offsetX": 0,
+							"offsetY": 15,
+							"fontName": "Arial",
+							"fontSize": 12,
+							"textAlign": "center",
+							"outlineColor": {
+								"a": 1,
+								"b": 255,
+								"g": 255,
+								"r": 255
+							},
+							"outlineWidth": 2,
+							"textBaseLine": "middle"
+						},
+						"enabled": false
+					}
+				},
+				"geometry": {
+					"type": "Point",
+					"fieldName": "geom"
+				},
+				"identify": true,
+				"namespace": "gis",
+				"showLegend": true,
+				"description": "Населенные пункты РФ, имеющие статус города (на 2021 год)\r\nПоля слоя:\r\nobjectid – id объекта слоя\r\nname_rus – название на русском\r\nname_eng – название на английском",
+				"resourceUrl": "http://gis.flexatel.xyz/geoserver/rest/workspaces/gis/datastores/db/featuretypes/builder_base_russian_cities.json",
+				"geoserverUrl": "https://gis.flexatel.xyz/geoserver",
+				"displayFieldName": "name_rus"
+			},
+			{
+				"id": "3556efe7-9891-4aff-90ef-2f51e6147928",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"maxx": 177.49459838867188,
+					"maxy": 74.03446197509766,
+					"minx": -179.1902313232422,
+					"miny": 41.23354721069336
+				},
+				"name": "builder_standard_russian_roads",
+				"type": "VectorTile",
+				"order": 3,
+				"style": {
+					"type": "CommonSymbol",
+					"symbol": {
+						"fill": {
+							"color": {
+								"a": 1,
+								"b": 228,
+								"g": 155,
+								"r": 134
+							}
+						},
+						"stroke": {
+							"color": {
+								"a": 1,
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"width": 1
+						}
+					}
+				},
+				"title": "Дороги РФ на 2021 год",
+				"fields": {
+					"id": {
+						"name": "id",
+						"alias": "id",
+						"order": 1,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"geom": {
+						"name": "geom",
+						"alias": "geom",
+						"order": 0,
+						"binding": "org.locationtech.jts.geom.Geometry",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"objectid": {
+						"name": "objectid",
+						"alias": "objectid",
+						"order": 0,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					}
+				},
+				"opacity": 0.19999999999999996,
+				"visible": true,
+				"geometry": {
+					"type": "MultiLineString",
+					"fieldName": "geom"
+				},
+				"identify": true,
+				"namespace": "gis",
+				"showLegend": true,
+				"description": "Линейный слой автомобильных дорог РФ в масштабе 1 : 1 000 000 (на 2021 год)\r\nПоля слоя:\r\nobjectid – идентификационный номер объекта",
+				"resourceUrl": "http://gis.flexatel.xyz/geoserver/rest/workspaces/gis/datastores/db/featuretypes/builder_standard_russian_roads.json",
+				"geoserverUrl": "https://gis.flexatel.xyz/geoserver"
+			},
+			{
+				"id": "0f3370b9-1e2e-46dc-9c5f-1468df0c86bf",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"maxx": 180,
+					"maxy": 87.038599,
+					"minx": -180,
+					"miny": 41.128232
+				},
+				"name": "builder_standard_russian_geology",
+				"type": "VectorTile",
+				"order": 1,
+				"style": {
+					"type": "ByAttribute",
+					"values": [
+						{
+							"id": "2f417bf9-ad9a-4959-be02-0ba14ed735bb",
+							"type": "Value",
+							"alias": "Архей",
+							"value": "Архей",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 129,
+										"g": 108,
+										"r": 232
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "3d02e5dc-b9fd-4888-9e8e-7181f8e2fa7e",
+							"type": "Value",
+							"alias": "Девон",
+							"value": "Девон",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 59,
+										"g": 87,
+										"r": 127
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "d4ae157f-6d40-4581-acf4-aeef1c792225",
+							"type": "Value",
+							"alias": "Девон-Каменноугольный",
+							"value": "Девон-Каменноугольный",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 158,
+										"g": 170,
+										"r": 188
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "601c1726-bde7-46f7-9240-df8097631fc0",
+							"type": "Value",
+							"alias": "Каменноугольный",
+							"value": "Каменноугольный",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 138,
+										"g": 147,
+										"r": 146
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "30f721fb-e3db-49c7-9b94-bb32577c5ed0",
+							"type": "Value",
+							"alias": "Каменноугольный-Пермский",
+							"value": "Каменноугольный-Пермский",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 142,
+										"g": 170,
+										"r": 196
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "5fd6f139-120c-4a89-a34c-f4905cdfc696",
+							"type": "Value",
+							"alias": "Кембрий",
+							"value": "Кембрий",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 141,
+										"g": 162,
+										"r": 127
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "548bbb80-c4ad-4c32-a5d2-2dbc22b60f4e",
+							"type": "Value",
+							"alias": "Кембрий-Ордовик",
+							"value": "Кембрий-Ордовик",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 143,
+										"g": 187,
+										"r": 171
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "34f0177d-f1dd-499e-b864-73877cb4c430",
+							"type": "Value",
+							"alias": "Кембрий-Силур",
+							"value": "Кембрий-Силур",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 224,
+										"g": 104,
+										"r": 243
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "1348910a-ed5b-43a1-a518-d83aff4d392d",
+							"type": "Value",
+							"alias": "Мел",
+							"value": "Мел",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 87,
+										"g": 239,
+										"r": 192
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "2f99faf3-133d-4e22-87d2-3c38eb44390e",
+							"type": "Value",
+							"alias": "Мел-Палеоген",
+							"value": "Мел-Палеоген",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 46,
+										"g": 171,
+										"r": 188
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "b127c8b8-85b6-4349-bda7-646c0a00332f",
+							"type": "Value",
+							"alias": "Неоген",
+							"value": "Неоген",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 70,
+										"g": 249,
+										"r": 250
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "4192a2d6-6a23-4748-b604-9bed01ee70f9",
+							"type": "Value",
+							"alias": "Неоген-Четвертичный",
+							"value": "Неоген-Четвертичный",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 166,
+										"g": 247,
+										"r": 248
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "aa7a6b6e-ba30-4f3c-8993-fe1f3738c568",
+							"type": "Value",
+							"alias": "Ордовик",
+							"value": "Ордовик",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 73,
+										"g": 144,
+										"r": 112
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "411fd168-b66b-41c8-bba3-9ae6eeadb35b",
+							"type": "Value",
+							"alias": "Ордовик-Девон",
+							"value": "Ордовик-Девон",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 172,
+										"g": 225,
+										"r": 207
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "0a72a899-9243-48b0-b1ea-7f9603abde00",
+							"type": "Value",
+							"alias": "Ордовик-Силур",
+							"value": "Ордовик-Силур",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 136,
+										"g": 192,
+										"r": 182
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "566cd2a2-ea87-415e-867f-de87e2b7fb89",
+							"type": "Value",
+							"alias": "Палеоген",
+							"value": "Палеоген",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 52,
+										"g": 198,
+										"r": 232
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "6545d76d-dbf0-4169-b747-e2392ec39a83",
+							"type": "Value",
+							"alias": "Палеоген-Неоген",
+							"value": "Палеоген-Неоген",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 118,
+										"g": 247,
+										"r": 244
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "3290e2e1-b9c2-4b5a-972b-519e78449802",
+							"type": "Value",
+							"alias": "Палеозой",
+							"value": "Палеозой",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 50,
+										"g": 193,
+										"r": 189
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "09f988ae-a100-418c-bc23-9daba00cc537",
+							"type": "Value",
+							"alias": "Палеозой-Мезозой",
+							"value": "Палеозой-Мезозой",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 170,
+										"g": 185,
+										"r": 226
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "1d44b4c5-ad28-4b7d-9c0f-55a8d5d3012c",
+							"type": "Value",
+							"alias": "Пермь",
+							"value": "Пермь",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 66,
+										"g": 118,
+										"r": 179
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "49c1d959-b20a-4eae-a0cb-780b4810d7d1",
+							"type": "Value",
+							"alias": "Пермь-Триас",
+							"value": "Пермь-Триас",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 170,
+										"g": 185,
+										"r": 226
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "f8445201-8c0f-470d-828a-1d8b53440259",
+							"type": "Value",
+							"alias": "Протерозой",
+							"value": "Протерозой",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 131,
+										"g": 140,
+										"r": 238
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "b2cd866c-9e8e-47fa-b2af-86564e59ed52",
+							"type": "Value",
+							"alias": "Протерозой-Палеозой",
+							"value": "Протерозой-Палеозой",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 172,
+										"g": 225,
+										"r": 207
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "e5717237-5e7b-49c9-8ca8-2d102917fcec",
+							"type": "Value",
+							"alias": "Силур",
+							"value": "Силур",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 82,
+										"g": 178,
+										"r": 169
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "37aeb36e-4ac7-47ef-b100-f5752f83ae3c",
+							"type": "Value",
+							"alias": "Силур-Девон",
+							"value": "Силур-Девон",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 133,
+										"g": 157,
+										"r": 181
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "5452be50-5b56-45f5-84de-009948973c87",
+							"type": "Value",
+							"alias": "Триас",
+							"value": "Триас",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 184,
+										"g": 142,
+										"r": 220
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "7fa61013-062b-47b8-acae-fedab6c1619d",
+							"type": "Value",
+							"alias": "Четвертичный",
+							"value": "Четвертичный",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 161,
+										"g": 244,
+										"r": 248
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "46697f7f-d03f-429c-a950-4c0f7963121f",
+							"type": "Value",
+							"alias": "Юра",
+							"value": "Юра",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 196,
+										"g": 152,
+										"r": 111
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "f8ba31b8-e32e-4420-8b55-57e8ad471f14",
+							"type": "Value",
+							"alias": "Юра-Мел",
+							"value": "Юра-Мел",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 202,
+										"g": 222,
+										"r": 199
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "88fa78d4-5c61-4281-8f3a-350bcd062165",
+							"type": "Value",
+							"alias": "другое",
+							"value": "другое",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 232,
+										"g": 226,
+										"r": 225
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "360373eb-a262-49fd-8742-8d932c23201e",
+							"type": "Value",
+							"alias": "",
+							"value": "нет данных",
+							"symbol": {
+								"fill": {
+									"gap": 5,
+									"type": "solid",
+									"angle": 0,
+									"color": {
+										"a": 0,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"scale": 1,
+									"width": 1,
+									"patternColor": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									}
+								},
+								"stroke": {
+									"color": {
+										"a": 0,
+										"b": 255,
+										"g": 255,
+										"r": 255
+									},
+									"width": 1
+								}
+							},
+							"removeFromLegend": false
+						}
+					],
+					"fieldName": "geohronolo",
+					"defaultSymbol": {
+						"fill": {
+							"type": "solid",
+							"color": {
+								"a": 1,
+								"b": 228,
+								"g": 155,
+								"r": 134
+							}
+						},
+						"stroke": {
+							"color": {
+								"a": 1,
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"width": 1
+						}
+					},
+					"symbolValueType": "Value",
+					"removeDefaultFromLegend": true
+				},
+				"title": "Геологическая карта РФ",
+				"fields": {
+					"id": {
+						"name": "id",
+						"alias": "id",
+						"order": 4,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"geom": {
+						"name": "geom",
+						"alias": "geom",
+						"order": 0,
+						"binding": "org.locationtech.jts.geom.Geometry",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"eng_txt": {
+						"name": "eng_txt",
+						"alias": "eng_txt",
+						"order": 1,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"rus_txt": {
+						"name": "rus_txt",
+						"alias": "Описание",
+						"order": 2,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"ind_code": {
+						"name": "ind_code",
+						"alias": "Обозначение",
+						"order": 0,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"geohronolo": {
+						"name": "geohronolo",
+						"alias": "Геохрон",
+						"order": 3,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					}
+				},
+				"opacity": 0.19999999999999996,
+				"visible": false,
+				"controls": {
+					"Labels": {
+						"id": "-CSWQ8SIrAJXiHiwPyh7o",
+						"type": "Labels",
+						"title": "Подписи",
+						"config": {
+							"zoom": [
+								1,
+								28
+							],
+							"color": {
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"field": [
+								{
+									"type": "field",
+									"value": "ind_code"
+								}
+							],
+							"offsetX": 0,
+							"offsetY": 15,
+							"fontName": "Arial",
+							"fontSize": 12,
+							"textAlign": "center",
+							"outlineColor": {
+								"a": 1,
+								"b": 255,
+								"g": 255,
+								"r": 255
+							},
+							"outlineWidth": 1,
+							"textBaseLine": "middle"
+						},
+						"enabled": true
+					},
+					"Filters": {
+						"id": "7-eG8RlAU3Lq4jO0L3BUj",
+						"type": "Filters",
+						"title": "Filter",
+						"filters": {
+							"ikKgdIKz1IHAj3eQ_8R_a": {
+								"id": "ikKgdIKz1IHAj3eQ_8R_a",
+								"type": "Checkbox",
+								"field": "geohronolo",
+								"order": 0,
+								"title": "",
+								"values": {
+									"-tsKtpMQ9EHveKtKRZlrs": {
+										"id": "-tsKtpMQ9EHveKtKRZlrs",
+										"alias": "Четвертичный",
+										"order": 29,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Четвертичный"
+									},
+									"06MM6xUMegK5V5gku4nZu": {
+										"id": "06MM6xUMegK5V5gku4nZu",
+										"alias": "Кембрий-Ордовик",
+										"order": 7,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Кембрий-Ордовик"
+									},
+									"3U1ov3koiXb5lzZ0nO9hZ": {
+										"id": "3U1ov3koiXb5lzZ0nO9hZ",
+										"alias": "Триас",
+										"order": 28,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Триас"
+									},
+									"3W3ktBhsbpS-vfJsC0h1k": {
+										"id": "3W3ktBhsbpS-vfJsC0h1k",
+										"alias": "Протерозой",
+										"order": 24,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Протерозой"
+									},
+									"3XeXZH39FKQ0N-ScqNGNR": {
+										"id": "3XeXZH39FKQ0N-ScqNGNR",
+										"alias": "Юра",
+										"order": 30,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Юра"
+									},
+									"4lucBu_4h3rVZqWsTgOar": {
+										"id": "4lucBu_4h3rVZqWsTgOar",
+										"alias": "Мел-Палеоген",
+										"order": 10,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Мел-Палеоген"
+									},
+									"6TJHFi17q5R-UM7VkOVQQ": {
+										"id": "6TJHFi17q5R-UM7VkOVQQ",
+										"alias": "Палеозой",
+										"order": 20,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Палеозой"
+									},
+									"930ZosGo5-3vNbR2paG6H": {
+										"id": "930ZosGo5-3vNbR2paG6H",
+										"alias": "Пермь",
+										"order": 22,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Пермь"
+									},
+									"9UnbNjiqgg0RfMLVoWMNC": {
+										"id": "9UnbNjiqgg0RfMLVoWMNC",
+										"alias": "Девон-Каменноугольный",
+										"order": 3,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Девон-Каменноугольный"
+									},
+									"9glFYqkZDm4c4tBG8tyBl": {
+										"id": "9glFYqkZDm4c4tBG8tyBl",
+										"alias": "Каменноугольный-Пермский",
+										"order": 5,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Каменноугольный-Пермский"
+									},
+									"A56kQSHAkWoj9Nt8a9Bzd": {
+										"id": "A56kQSHAkWoj9Nt8a9Bzd",
+										"alias": "Юра-Мел",
+										"order": 31,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Юра-Мел"
+									},
+									"Gu_FEP_m3dgobtuk3mpmT": {
+										"id": "Gu_FEP_m3dgobtuk3mpmT",
+										"alias": "Палеозой-Мезозой",
+										"order": 21,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Палеозой-Мезозой"
+									},
+									"Ka2OkRBSoXj2vZSgvF6cc": {
+										"id": "Ka2OkRBSoXj2vZSgvF6cc",
+										"alias": "Силур",
+										"order": 26,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Силур"
+									},
+									"Loasb7L1mfI-8AzjVNL_f": {
+										"id": "Loasb7L1mfI-8AzjVNL_f",
+										"alias": "Каменноугольный",
+										"order": 4,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Каменноугольный"
+									},
+									"NFMZ6MgsTxd9-mu7gtQvU": {
+										"id": "NFMZ6MgsTxd9-mu7gtQvU",
+										"alias": "Архей",
+										"order": 1,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Архей"
+									},
+									"QfhHoysFpWuG3mPJoaikZ": {
+										"id": "QfhHoysFpWuG3mPJoaikZ",
+										"alias": "Пермь-Триас",
+										"order": 23,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Пермь-Триас"
+									},
+									"TlSdHeYuLoMqLSRAr4IlI": {
+										"id": "TlSdHeYuLoMqLSRAr4IlI",
+										"alias": "Неоген-Четвертичный",
+										"order": 12,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Неоген-Четвертичный"
+									},
+									"YOnZM1kiwkTVWZyUc3Hmx": {
+										"id": "YOnZM1kiwkTVWZyUc3Hmx",
+										"alias": "Ордовик-Девон",
+										"order": 14,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ордовик-Девон"
+									},
+									"YcRt_lPwH-BY30JsIc7pQ": {
+										"id": "YcRt_lPwH-BY30JsIc7pQ",
+										"alias": "Ордовик",
+										"order": 13,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ордовик"
+									},
+									"fkfwcoy3oFHO6b3Jk2Cw_": {
+										"id": "fkfwcoy3oFHO6b3Jk2Cw_",
+										"alias": "Палеоген-Неоген",
+										"order": 17,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Палеоген-Неоген"
+									},
+									"i5W_LVcyGJn5HxunEHQ15": {
+										"id": "i5W_LVcyGJn5HxunEHQ15",
+										"alias": "Кембрий-Силур",
+										"order": 8,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Кембрий-Силур"
+									},
+									"jLS8pUbQ5_tcPmqhflCj8": {
+										"id": "jLS8pUbQ5_tcPmqhflCj8",
+										"alias": "Неоген",
+										"order": 11,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Неоген"
+									},
+									"k1-eMhoDtn5EcZP0X7CQo": {
+										"id": "k1-eMhoDtn5EcZP0X7CQo",
+										"alias": "Кембрий",
+										"order": 6,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Кембрий"
+									},
+									"lp43-crane35uCSo-MgJR": {
+										"id": "lp43-crane35uCSo-MgJR",
+										"alias": "Девон",
+										"order": 2,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Девон"
+									},
+									"mHMgatFuxGUjj1AxZpHfG": {
+										"id": "mHMgatFuxGUjj1AxZpHfG",
+										"alias": "Мел",
+										"order": 9,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Мел"
+									},
+									"nNADsNdDvEEsv6lxKnoVl": {
+										"id": "nNADsNdDvEEsv6lxKnoVl",
+										"alias": "Другое",
+										"order": 32,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "другое"
+									},
+									"o_TsJl3HcrVeyGjAgos_k": {
+										"id": "o_TsJl3HcrVeyGjAgos_k",
+										"alias": "Ордовик-Силур",
+										"order": 15,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ордовик-Силур"
+									},
+									"qRQOoL-V-lweBJO4SwYot": {
+										"id": "qRQOoL-V-lweBJO4SwYot",
+										"alias": "Протерозой-Палеозой",
+										"order": 25,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Протерозой-Палеозой"
+									},
+									"s2VCu8P_R2wb5qFzt57Fk": {
+										"id": "s2VCu8P_R2wb5qFzt57Fk",
+										"alias": "Силур-Девон",
+										"order": 27,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Силур-Девон"
+									},
+									"wy-sEVxs8hvyoZYgOH7tt": {
+										"id": "wy-sEVxs8hvyoZYgOH7tt",
+										"alias": "Палеоген",
+										"order": 16,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Палеоген"
+									},
+									"ALL_OTHER_FILTER_VALUES": {
+										"id": "ALL_OTHER_FILTER_VALUES",
+										"alias": "Остальные",
+										"order": 10000,
+										"checked": false,
+										"visible": false,
+										"fieldValue": "ALL_OTHER_FILTER_VALUES"
+									}
+								}
+							}
+						}
+					}
+				},
+				"geometry": {
+					"type": "MultiPolygon",
+					"fieldName": "geom"
+				},
+				"identify": true,
+				"namespace": "gis",
+				"showLegend": true,
+				"description": "Полигональный слой геологической карты Российской Федерации\r\nПоля слоя:\r\nind_code – Код геологических отложений\r\neng_txt – Английское название геологического отложения\r\nrus_txt – Русское название геологического отложения\r\ngeohronology – Эра или период",
+				"resourceUrl": "http://gis.flexatel.xyz/geoserver/rest/workspaces/gis/datastores/db/featuretypes/builder_standard_russian_geology.json",
+				"geoserverUrl": "https://gis.flexatel.xyz/geoserver"
+			},
+			{
+				"id": "da0396dd-18ec-4a31-a0eb-960c2d6f81d4",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"maxx": 180.00001525878906,
+					"maxy": 81.8381576538086,
+					"minx": -180,
+					"miny": 41.18819808959961
+				},
+				"name": "builder_standard_russian_mun",
+				"type": "VectorTile",
+				"order": 4,
+				"style": {
+					"type": "CommonSymbol",
+					"symbol": {
+						"fill": {
+							"type": "solid",
+							"color": {
+								"a": 1,
+								"b": 228,
+								"g": 155,
+								"r": 134
+							}
+						},
+						"stroke": {
+							"color": {
+								"a": 1,
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"width": 1
+						}
+					}
+				},
+				"title": "Муниципалитеты РФ на 2021 год",
+				"fields": {
+					"id": {
+						"name": "id",
+						"alias": "id",
+						"order": 4,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"geom": {
+						"name": "geom",
+						"alias": "geom",
+						"order": 0,
+						"binding": "org.locationtech.jts.geom.Geometry",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"center": {
+						"name": "center",
+						"alias": "center",
+						"order": 3,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"name_mun": {
+						"name": "name_mun",
+						"alias": "name_mun",
+						"order": 2,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"name_reg": {
+						"name": "name_reg",
+						"alias": "name_reg",
+						"order": 1,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"objectid": {
+						"name": "objectid",
+						"alias": "objectid",
+						"order": 0,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					}
+				},
+				"opacity": 0.5,
+				"visible": true,
+				"geometry": {
+					"type": "MultiPolygon",
+					"fieldName": "geom"
+				},
+				"identify": true,
+				"namespace": "gis",
+				"showLegend": true,
+				"description": "Полигональный слой административно-территориального деления РФ на уровне муниципалитетов на 2021 год\r\nПоля:\r\nobjectid – идентификационный номер объекта\r\nname_reg – название региона\r\nname_mun  название муниципального района\r\ncenter – столица",
+				"resourceUrl": "http://gis.flexatel.xyz/geoserver/rest/workspaces/gis/datastores/db/featuretypes/builder_standard_russian_mun.json",
+				"geoserverUrl": "https://gis.flexatel.xyz/geoserver"
+			},
+			{
+				"id": "0f207d93-ee6b-4229-8254-3ed7961c894a",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"maxx": 179.392959,
+					"maxy": 81.805464,
+					"minx": -179.465439,
+					"miny": 41.409472
+				},
+				"name": "builder_base_russian_cities",
+				"type": "VectorTile",
+				"order": 5,
+				"style": {
+					"type": "CommonSymbol",
+					"symbol": {
+						"fill": {
+							"color": {
+								"a": 1,
+								"b": 27,
+								"g": 2,
+								"r": 208
+							}
+						},
+						"image": {
+							"size": 15,
+							"type": "Pin",
+							"imageString": "data:image/svg+xml;utf8,%3Csvg%20height%3D%2215%22%20width%3D%2215%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Cpath%20d%3D%22M11.9999%200.5C6.7499%200.5%202.3999%204.525%202.3999%209.26875C2.3999%2014.875%208.6999%2020.4812%2011.0999%2023.0687C11.2499%2023.3562%2011.6999%2023.5%2011.9999%2023.5C12.2999%2023.5%2012.7499%2023.3562%2012.8999%2023.0687C15.2999%2020.4812%2021.5999%2014.875%2021.5999%209.26875C21.5999%204.525%2017.2499%200.5%2011.9999%200.5ZM11.9999%2012.8625C10.0499%2012.8625%208.3999%2011.2812%208.3999%209.4125C8.3999%207.54375%2010.0499%205.9625%2011.9999%205.9625C13.9499%205.9625%2015.5999%207.54375%2015.5999%209.4125C15.5999%2011.2812%2013.9499%2012.8625%2011.9999%2012.8625Z%22%20fill%3D%22%23d0021b%22%20stroke%3D%22%23000000%22%20stroke-width%3D%221%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+						},
+						"stroke": {
+							"color": {
+								"a": 1,
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"width": 1
+						}
+					}
+				},
+				"title": "Города РФ на 2021 год",
+				"fields": {
+					"id": {
+						"name": "id",
+						"alias": "id",
+						"order": 3,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"geom": {
+						"name": "geom",
+						"alias": "geom",
+						"order": 0,
+						"binding": "org.locationtech.jts.geom.Geometry",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"name_eng": {
+						"name": "name_eng",
+						"alias": "Название на английском",
+						"order": 2,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"name_rus": {
+						"name": "name_rus",
+						"alias": "Название",
+						"order": 1,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"objectid": {
+						"name": "objectid",
+						"alias": "objectid",
+						"order": 0,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					}
+				},
+				"opacity": 0.19999999999999996,
+				"visible": true,
+				"controls": {
+					"Labels": {
+						"id": "5JUjvRM1ngdXal-VAhosC",
+						"type": "Labels",
+						"title": "Подписи",
+						"config": {
+							"bold": true,
+							"zoom": [
+								1,
+								28
+							],
+							"color": {
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"field": [
+								{
+									"type": "field",
+									"value": "name_rus"
+								}
+							],
+							"offsetX": 0,
+							"offsetY": 15,
+							"fontName": "Arial",
+							"fontSize": 12,
+							"textAlign": "center",
+							"outlineColor": {
+								"a": 1,
+								"b": 255,
+								"g": 255,
+								"r": 255
+							},
+							"outlineWidth": 2,
+							"textBaseLine": "middle"
+						},
+						"enabled": true
+					}
+				},
+				"geometry": {
+					"type": "Point",
+					"fieldName": "geom"
+				},
+				"identify": true,
+				"namespace": "gis",
+				"showLegend": true,
+				"description": "Населенные пункты РФ, имеющие статус города (на 2021 год)\r\nПоля слоя:\r\nobjectid – id объекта слоя\r\nname_rus – название на русском\r\nname_eng – название на английском",
+				"resourceUrl": "http://gis.flexatel.xyz/geoserver/rest/workspaces/gis/datastores/db/featuretypes/builder_base_russian_cities.json",
+				"geoserverUrl": "https://gis.flexatel.xyz/geoserver",
+				"displayFieldName": "name_rus"
+			},
+			{
+				"id": "9b34edae-24c6-45b5-9033-62ab699f9cff",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"maxx": 177.38722229003906,
+					"maxy": 76.01102447509766,
+					"minx": -174.6465301513672,
+					"miny": 41.334144592285156
+				},
+				"name": "builder_standard_russian_mun_centroids",
+				"type": "VectorTile",
+				"order": 6,
+				"style": {
+					"type": "CommonSymbol",
+					"symbol": {
+						"fill": {
+							"color": {
+								"a": 1,
+								"b": 228,
+								"g": 155,
+								"r": 134
+							}
+						},
+						"image": {
+							"size": 15,
+							"type": "circle",
+							"imageString": "data:image/svg+xml;utf8,%3Csvg%20height%3D%2215%22%20width%3D%2215%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%227.5%22%20r%3D%227%22%20stroke%3D%22%23000000%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%22%22%20fill%3D%22%23869be4%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E"
+						},
+						"stroke": {
+							"color": {
+								"a": 1,
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"width": 1
+						}
+					}
+				},
+				"title": "Центроиды муниципалитетов РФ на 2021 год",
+				"fields": {
+					"id": {
+						"name": "id",
+						"alias": "id",
+						"order": 4,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"geom": {
+						"name": "geom",
+						"alias": "geom",
+						"order": 0,
+						"binding": "org.locationtech.jts.geom.Geometry",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"center": {
+						"name": "center",
+						"alias": "center",
+						"order": 3,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"name_mun": {
+						"name": "name_mun",
+						"alias": "name_mun",
+						"order": 2,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"name_reg": {
+						"name": "name_reg",
+						"alias": "name_reg",
+						"order": 1,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"objectid": {
+						"name": "objectid",
+						"alias": "objectid",
+						"order": 0,
+						"binding": "java.lang.Integer",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					}
+				},
+				"visible": true,
+				"geometry": {
+					"type": "Point",
+					"fieldName": "geom"
+				},
+				"identify": true,
+				"namespace": "gis",
+				"showLegend": true,
+				"description": "Точечный слой центроидов административно-территориального деления РФ на уровне муниципалитетов\r\nПоля слоя:\r\nobjectid – идентификационный номер объекта\r\nname_reg – название региона\r\nname_mun  название муниципального района\r\ncenter – столица",
+				"resourceUrl": "http://gis.flexatel.xyz/geoserver/rest/workspaces/gis/datastores/db/featuretypes/builder_standard_russian_mun_centroids.json",
+				"geoserverUrl": "https://gis.flexatel.xyz/geoserver"
+			},
+			{
+				"id": "f473e5e0-5b86-4d35-bfd1-6523bbd8e711",
+				"bbox": {
+					"crs": "EPSG:4326",
+					"minx": 19.9013,
+					"miny": 42.0316,
+					"maxx": 177.5135,
+					"maxy": 70.8941
+				},
+				"name": "builder_pro_new_buildings",
+				"type": "VectorTile",
+				"order": 7,
+				"style": {
+					"type": "ByAttribute",
+					"values": [
+						{
+							"id": "4ac4422f-8012-4a1c-a7c7-129bb6619548",
+							"type": "Value",
+							"alias": "Проблемные",
+							"value": "Проблемные",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 179,
+										"g": 85,
+										"r": 249
+									}
+								},
+								"image": {
+									"size": 15,
+									"type": "Office1",
+									"imageString": "data:image/svg+xml;utf8,%3Csvg%20height%3D%2215%22%20width%3D%2215%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2210%22%20fill%3D%22%23f955b3%22%20stroke%3D%22%23000000%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%22%22%3E%3C%2Fcircle%3E%3Cpath%20d%3D%22M15.9665%206H8.03369C7.46524%206%207%206.40884%207%206.90953V18H16.9999L17%206.90953C17%206.40884%2016.5342%206%2015.9663%206H15.9665ZM11.1119%2015.962H9.1929V14.2735H11.1119V15.962ZM11.1119%2012.8432H9.1929V11.1551H11.1119V12.8432ZM11.1119%209.72581H9.1929V8.03732H11.1119V9.72581ZM14.8077%2015.962H12.8887V14.2735H14.8077V15.962ZM14.8077%2012.8432H12.8887V11.155H14.8077V12.8432ZM14.8077%209.72578H12.8887V8.03729H14.8077V9.72578Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "f77ea0e6-a9f3-409d-b26b-3f5a3280cfcd",
+							"type": "Value",
+							"alias": "Сданные",
+							"value": "Сданные",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 102,
+										"g": 251,
+										"r": 59
+									}
+								},
+								"image": {
+									"size": 15,
+									"type": "Office1",
+									"imageString": "data:image/svg+xml;utf8,%3Csvg%20height%3D%2215%22%20width%3D%2215%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2210%22%20fill%3D%22%233bfb66%22%20stroke%3D%22%23000000%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%22%22%3E%3C%2Fcircle%3E%3Cpath%20d%3D%22M15.9665%206H8.03369C7.46524%206%207%206.40884%207%206.90953V18H16.9999L17%206.90953C17%206.40884%2016.5342%206%2015.9663%206H15.9665ZM11.1119%2015.962H9.1929V14.2735H11.1119V15.962ZM11.1119%2012.8432H9.1929V11.1551H11.1119V12.8432ZM11.1119%209.72581H9.1929V8.03732H11.1119V9.72581ZM14.8077%2015.962H12.8887V14.2735H14.8077V15.962ZM14.8077%2012.8432H12.8887V11.155H14.8077V12.8432ZM14.8077%209.72578H12.8887V8.03729H14.8077V9.72578Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						},
+						{
+							"id": "4f246605-b44a-4d93-bbf9-0bf3388c6fc0",
+							"type": "Value",
+							"alias": "Строящиеся",
+							"value": "Строящиеся",
+							"symbol": {
+								"fill": {
+									"color": {
+										"a": 1,
+										"b": 28,
+										"g": 231,
+										"r": 248
+									}
+								},
+								"image": {
+									"size": 15,
+									"type": "Office1",
+									"imageString": "data:image/svg+xml;utf8,%3Csvg%20height%3D%2215%22%20width%3D%2215%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%2212%22%20cy%3D%2212%22%20r%3D%2210%22%20fill%3D%22%23f8e71c%22%20stroke%3D%22%23000000%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%22%22%3E%3C%2Fcircle%3E%3Cpath%20d%3D%22M15.9665%206H8.03369C7.46524%206%207%206.40884%207%206.90953V18H16.9999L17%206.90953C17%206.40884%2016.5342%206%2015.9663%206H15.9665ZM11.1119%2015.962H9.1929V14.2735H11.1119V15.962ZM11.1119%2012.8432H9.1929V11.1551H11.1119V12.8432ZM11.1119%209.72581H9.1929V8.03732H11.1119V9.72581ZM14.8077%2015.962H12.8887V14.2735H14.8077V15.962ZM14.8077%2012.8432H12.8887V11.155H14.8077V12.8432ZM14.8077%209.72578H12.8887V8.03729H14.8077V9.72578Z%22%20fill%3D%22%23000000%22%3E%3C%2Fpath%3E%3C%2Fsvg%3E"
+								},
+								"stroke": {
+									"color": {
+										"a": 1,
+										"b": 0,
+										"g": 0,
+										"r": 0
+									},
+									"width": 1
+								}
+							}
+						}
+					],
+					"fieldName": "status",
+					"defaultSymbol": {
+						"fill": {
+							"color": {
+								"a": 1,
+								"b": 228,
+								"g": 155,
+								"r": 134
+							}
+						},
+						"image": {
+							"size": 15,
+							"type": "circle",
+							"imageString": "data:image/svg+xml;utf8,%3Csvg%20height%3D%2215%22%20width%3D%2215%22%20viewBox%3D%220%200%2016%2016%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Ccircle%20cx%3D%227.5%22%20cy%3D%227.5%22%20r%3D%227%22%20stroke%3D%22%23000000%22%20stroke-width%3D%221%22%20stroke-dasharray%3D%22%22%20fill%3D%22%23869be4%22%3E%3C%2Fcircle%3E%3C%2Fsvg%3E"
+						},
+						"stroke": {
+							"color": {
+								"a": 1,
+								"b": 0,
+								"g": 0,
+								"r": 0
+							},
+							"width": 1
+						}
+					},
+					"symbolValueType": "Value",
+					"removeDefaultFromLegend": true
+				},
+				"title": "Новостройки до 2031 года",
+				"fields": {
+					"x": {
+						"name": "x",
+						"alias": "x",
+						"order": 17,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"y": {
+						"name": "y",
+						"alias": "y",
+						"order": 16,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"geom": {
+						"name": "geom",
+						"alias": "geom",
+						"order": 22,
+						"binding": "org.locationtech.jts.geom.Point",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"year": {
+						"name": "year",
+						"alias": "Год",
+						"order": 14,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"region": {
+						"name": "region",
+						"alias": "Регион",
+						"order": 5,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"status": {
+						"name": "status",
+						"alias": "Статус проекта",
+						"order": 18,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"address": {
+						"name": "address",
+						"alias": "Полный адрес объекта",
+						"order": 6,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"objectid": {
+						"name": "objectid",
+						"alias": "objectid",
+						"order": 0,
+						"binding": "java.lang.Long",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": false
+					},
+					"developer": {
+						"name": "developer",
+						"alias": "Краткое наименование застройщика",
+						"order": 2,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"id_object": {
+						"name": "id_object",
+						"alias": "ID объекта недвижимости",
+						"order": 1,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"population": {
+						"name": "population",
+						"alias": "Население",
+						"order": 12,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"finish_date": {
+						"name": "finish_date",
+						"alias": "Дата 100%-й готовности",
+						"order": 13,
+						"binding": "java.sql.Timestamp",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"green_house": {
+						"name": "green_house",
+						"alias": "Энергоэффективный ли дом (green house)",
+						"order": 7,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"living_area": {
+						"name": "living_area",
+						"alias": "Жилая площадь",
+						"order": 15,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"region_code": {
+						"name": "region_code",
+						"alias": "Код региона объекта",
+						"order": 4,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"inn_developer": {
+						"name": "inn_developer",
+						"alias": "ИНН застройщика",
+						"order": 3,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"commercial_name": {
+						"name": "commercial_name",
+						"alias": "Коммерческое наименование объекта",
+						"order": 8,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"max_number_floors": {
+						"name": "max_number_floors",
+						"alias": "Максимальное кол-во этажей",
+						"order": 10,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"min_number_floors": {
+						"name": "min_number_floors",
+						"alias": "Минимальное кол-во этажей",
+						"order": 9,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"number_apartments": {
+						"name": "number_apartments",
+						"alias": "Кол-во квартир",
+						"order": 11,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"type_construction": {
+						"name": "type_construction",
+						"alias": "Тип строительства",
+						"order": 21,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"number_project_declaration": {
+						"name": "number_project_declaration",
+						"alias": "Номер проектной декларации",
+						"order": 20,
+						"binding": "java.lang.String",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					},
+					"number_residential_buildings": {
+						"name": "number_residential_buildings",
+						"alias": "Кол-во жилых зданий",
+						"order": 19,
+						"binding": "java.lang.Double",
+						"nillable": true,
+						"maxOccurs": 1,
+						"minOccurs": 0,
+						"showInInfowindow": true
+					}
+				},
+				"visible": true,
+				"controls": {
+					"Filters": {
+						"id": "gfxx8kuXvUceCUexkyBAv",
+						"type": "Filters",
+						"title": "Filter",
+						"filters": {
+							"92WJ6ezKxIh4IsPoappqP": {
+								"id": "92WJ6ezKxIh4IsPoappqP",
+								"type": "Range",
+								"field": "population",
+								"order": 5,
+								"title": "Население",
+								"values": {
+									"config": {
+										"max": 6046,
+										"min": 0
+									},
+									"values": {
+										"max": 6046,
+										"min": 0
+									}
+								}
+							},
+							"AbWPsWmAlSjk42RlnsSKE": {
+								"id": "AbWPsWmAlSjk42RlnsSKE",
+								"type": "Range",
+								"field": "max_number_floors",
+								"order": 8,
+								"title": "Максимальное кол-во этажей",
+								"values": {
+									"config": {
+										"max": 91,
+										"min": 0
+									},
+									"values": {
+										"max": 91,
+										"min": 0
+									}
+								}
+							},
+							"B1DyI6OwztE0pYmvUAklv": {
+								"id": "B1DyI6OwztE0pYmvUAklv",
+								"type": "Checkbox",
+								"field": "type_construction",
+								"order": 2,
+								"title": "Тип строительства",
+								"values": {
+									"HUkyUZ6VdhxNj1gGhd0WL": {
+										"id": "HUkyUZ6VdhxNj1gGhd0WL",
+										"alias": "Нежилое",
+										"order": 2,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Нежилое"
+									},
+									"QIeCE-3cWS089jqI8rNgm": {
+										"id": "QIeCE-3cWS089jqI8rNgm",
+										"alias": "Жилое",
+										"order": 1,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Жилое"
+									},
+									"ALL_OTHER_FILTER_VALUES": {
+										"id": "ALL_OTHER_FILTER_VALUES",
+										"alias": "others",
+										"order": 10000,
+										"checked": true,
+										"visible": false,
+										"fieldValue": "ALL_OTHER_FILTER_VALUES"
+									}
+								}
+							},
+							"HDjJfXrNrPaMkn-gYe66e": {
+								"id": "HDjJfXrNrPaMkn-gYe66e",
+								"type": "Checkbox",
+								"field": "year",
+								"order": 0,
+								"title": "Год",
+								"values": {
+									"1kRT7MzGMx11tVRUJbBbz": {
+										"id": "1kRT7MzGMx11tVRUJbBbz",
+										"alias": "2025",
+										"order": 18,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2025"
+									},
+									"Fa_ZlZShx8ysLlK8hbbyQ": {
+										"id": "Fa_ZlZShx8ysLlK8hbbyQ",
+										"alias": "2018",
+										"order": 11,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2018"
+									},
+									"LIbv6lbeb-bv10KfEe-iN": {
+										"id": "LIbv6lbeb-bv10KfEe-iN",
+										"alias": "2011",
+										"order": 5,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2011"
+									},
+									"Nedstk2w5AZw7_samPdjP": {
+										"id": "Nedstk2w5AZw7_samPdjP",
+										"alias": "2028",
+										"order": 21,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2028"
+									},
+									"OxKLAAIVEXPxDm4iz3gqF": {
+										"id": "OxKLAAIVEXPxDm4iz3gqF",
+										"alias": "2026",
+										"order": 19,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2026"
+									},
+									"QG80vWlS-CJI2fa_rV5sP": {
+										"id": "QG80vWlS-CJI2fa_rV5sP",
+										"alias": "2010",
+										"order": 4,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2010"
+									},
+									"VE9t-GbRwu60M63nNPKb8": {
+										"id": "VE9t-GbRwu60M63nNPKb8",
+										"alias": "2021",
+										"order": 14,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2021"
+									},
+									"VKxenoDgKA_f2REfFdzxt": {
+										"id": "VKxenoDgKA_f2REfFdzxt",
+										"alias": "2032",
+										"order": 25,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2032"
+									},
+									"Vfoj6hULqlm0jOPCPHLH7": {
+										"id": "Vfoj6hULqlm0jOPCPHLH7",
+										"alias": "2016",
+										"order": 9,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2016"
+									},
+									"XNjCwAZRETa6XSXXy_hOC": {
+										"id": "XNjCwAZRETa6XSXXy_hOC",
+										"alias": "2014",
+										"order": 7,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2014"
+									},
+									"YFmjfmVIhnJePDBe3vnNF": {
+										"id": "YFmjfmVIhnJePDBe3vnNF",
+										"alias": "2033",
+										"order": 26,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2033"
+									},
+									"ZhiXTDVIxu_IuMfmIndpq": {
+										"id": "ZhiXTDVIxu_IuMfmIndpq",
+										"alias": "2020",
+										"order": 13,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2020"
+									},
+									"c1SxCZ7RxR1Wa5q4nJZUi": {
+										"id": "c1SxCZ7RxR1Wa5q4nJZUi",
+										"alias": "2015",
+										"order": 8,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2015"
+									},
+									"cZW6KFNSQQa7uWsu9OEyI": {
+										"id": "cZW6KFNSQQa7uWsu9OEyI",
+										"alias": "2008",
+										"order": 2,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2008"
+									},
+									"dUbVaddAZC_vopROw5-ui": {
+										"id": "dUbVaddAZC_vopROw5-ui",
+										"alias": "2029",
+										"order": 22,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2029"
+									},
+									"e-yvGEeisJTQFfX-si_R5": {
+										"id": "e-yvGEeisJTQFfX-si_R5",
+										"alias": "2009",
+										"order": 3,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2009"
+									},
+									"hKESqSkX28zRjN6DZz4mn": {
+										"id": "hKESqSkX28zRjN6DZz4mn",
+										"alias": "2000",
+										"order": 1,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2000"
+									},
+									"hgfZaFhRW46N-t1ce4MI2": {
+										"id": "hgfZaFhRW46N-t1ce4MI2",
+										"alias": "2019",
+										"order": 12,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2019"
+									},
+									"i9Gx-xkZEERqoYhK-rBPF": {
+										"id": "i9Gx-xkZEERqoYhK-rBPF",
+										"alias": "2027",
+										"order": 20,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2027"
+									},
+									"jaME_3T5LJTeSTJuOty1v": {
+										"id": "jaME_3T5LJTeSTJuOty1v",
+										"alias": "2022",
+										"order": 15,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2022"
+									},
+									"kTGt0SI7VcdJb7PA9HLpZ": {
+										"id": "kTGt0SI7VcdJb7PA9HLpZ",
+										"alias": "2034",
+										"order": 27,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2034"
+									},
+									"q9NAoW-OO98AQZkEtZ00T": {
+										"id": "q9NAoW-OO98AQZkEtZ00T",
+										"alias": "2017",
+										"order": 10,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2017"
+									},
+									"qWDOt0hjht-2n163BBaNJ": {
+										"id": "qWDOt0hjht-2n163BBaNJ",
+										"alias": "2024",
+										"order": 17,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2024"
+									},
+									"rtnM2hzPwWbHK95eBz4j_": {
+										"id": "rtnM2hzPwWbHK95eBz4j_",
+										"alias": "2031",
+										"order": 24,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2031"
+									},
+									"t8ZqTyVTdAUTei_QJxtXq": {
+										"id": "t8ZqTyVTdAUTei_QJxtXq",
+										"alias": "2023",
+										"order": 16,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2023"
+									},
+									"tWU009-otkAZjz1grecmy": {
+										"id": "tWU009-otkAZjz1grecmy",
+										"alias": "2036",
+										"order": 28,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2036"
+									},
+									"v9O97TYqvoS6Z1kCGjpK4": {
+										"id": "v9O97TYqvoS6Z1kCGjpK4",
+										"alias": "2030",
+										"order": 23,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2030"
+									},
+									"vg5yoLMfL-uOo6w4YZenl": {
+										"id": "vg5yoLMfL-uOo6w4YZenl",
+										"alias": "Нет данных",
+										"order": 29,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "null"
+									},
+									"wixNd20jdv4n-CECEdaiM": {
+										"id": "wixNd20jdv4n-CECEdaiM",
+										"alias": "2013",
+										"order": 6,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "2013"
+									},
+									"ALL_OTHER_FILTER_VALUES": {
+										"id": "ALL_OTHER_FILTER_VALUES",
+										"alias": "others",
+										"order": 10000,
+										"checked": true,
+										"visible": false,
+										"fieldValue": "ALL_OTHER_FILTER_VALUES"
+									}
+								}
+							},
+							"QprMbx0gnuqWGj1C-IgCg": {
+								"id": "QprMbx0gnuqWGj1C-IgCg",
+								"type": "Checkbox",
+								"field": "status",
+								"order": 1,
+								"title": "Статус проекта",
+								"values": {
+									"-lHtFD_DBzUAeRdt1BT1z": {
+										"id": "-lHtFD_DBzUAeRdt1BT1z",
+										"alias": "Строящиеся",
+										"order": 3,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Строящиеся"
+									},
+									"go1Go_8L4f5miq5_sDFm4": {
+										"id": "go1Go_8L4f5miq5_sDFm4",
+										"alias": "Сданные",
+										"order": 2,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Сданные"
+									},
+									"oy5XUXekM8MtisvMQtCWR": {
+										"id": "oy5XUXekM8MtisvMQtCWR",
+										"alias": "Проблемные",
+										"order": 1,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Проблемные"
+									},
+									"ALL_OTHER_FILTER_VALUES": {
+										"id": "ALL_OTHER_FILTER_VALUES",
+										"alias": "others",
+										"order": 10000,
+										"checked": true,
+										"visible": false,
+										"fieldValue": "ALL_OTHER_FILTER_VALUES"
+									}
+								}
+							},
+							"gHLZ3OUSF9kZu3Tjqwkbu": {
+								"id": "gHLZ3OUSF9kZu3Tjqwkbu",
+								"type": "Checkbox",
+								"field": "region",
+								"order": 9,
+								"title": "Регион",
+								"values": {
+									"-3mvwDUUURlpeUd24iUaJ": {
+										"id": "-3mvwDUUURlpeUd24iUaJ",
+										"alias": "Еврейская автономная область",
+										"order": 12,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Еврейская автономная область"
+									},
+									"-eVMRgHM3vJ5joeYIEBxq": {
+										"id": "-eVMRgHM3vJ5joeYIEBxq",
+										"alias": "Оренбургская область",
+										"order": 39,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Оренбургская область"
+									},
+									"-ee2wC1cA1uyuP-Bv7Bnx": {
+										"id": "-ee2wC1cA1uyuP-Bv7Bnx",
+										"alias": "Амурская область",
+										"order": 2,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Амурская область"
+									},
+									"04ODmBCn-ZkDDViwdo8Tg": {
+										"id": "04ODmBCn-ZkDDViwdo8Tg",
+										"alias": "Хабаровский край",
+										"order": 78,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Хабаровский край"
+									},
+									"0E9FdTqbF-M8u__ZQlIQp": {
+										"id": "0E9FdTqbF-M8u__ZQlIQp",
+										"alias": "Ямало-Ненецкий автономный округ",
+										"order": 84,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ямало-Ненецкий автономный округ"
+									},
+									"0zVsbXKZqLcK0ixyLJCdR": {
+										"id": "0zVsbXKZqLcK0ixyLJCdR",
+										"alias": "Иркутская область",
+										"order": 15,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Иркутская область"
+									},
+									"1T3pYPdIpM--Ca3zAYC7v": {
+										"id": "1T3pYPdIpM--Ca3zAYC7v",
+										"alias": "Республика Северная Осетия - Алания",
+										"order": 58,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Северная Осетия - Алания"
+									},
+									"1Yth90d6BHgy3G7qRq5b2": {
+										"id": "1Yth90d6BHgy3G7qRq5b2",
+										"alias": "Санкт-Петербург",
+										"order": 65,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Санкт-Петербург"
+									},
+									"1fMOZFIJVQL_3pQQd3Nso": {
+										"id": "1fMOZFIJVQL_3pQQd3Nso",
+										"alias": "Краснодарский край",
+										"order": 24,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Краснодарский край"
+									},
+									"28MK7NavwWTMwTueFs1HJ": {
+										"id": "28MK7NavwWTMwTueFs1HJ",
+										"alias": "Томская область",
+										"order": 73,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Томская область"
+									},
+									"4VAEfmCYJwHFel0FIUMDo": {
+										"id": "4VAEfmCYJwHFel0FIUMDo",
+										"alias": "Донецкая область",
+										"order": 11,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Донецкая область"
+									},
+									"4caRUMz8QCNIaS8WR_8P9": {
+										"id": "4caRUMz8QCNIaS8WR_8P9",
+										"alias": "Московская область",
+										"order": 32,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Московская область"
+									},
+									"4knF4aGBNR4T90YurOQYy": {
+										"id": "4knF4aGBNR4T90YurOQYy",
+										"alias": "Красноярский край",
+										"order": 25,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Красноярский край"
+									},
+									"5H31w3mGqZMKZCpP7Q-lx": {
+										"id": "5H31w3mGqZMKZCpP7Q-lx",
+										"alias": "Магаданская область",
+										"order": 31,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Магаданская область"
+									},
+									"5KL5dNe3KIubCgnykEURQ": {
+										"id": "5KL5dNe3KIubCgnykEURQ",
+										"alias": "Архангельская область",
+										"order": 3,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Архангельская область"
+									},
+									"5Op8lMLDL_U1ojBnZNNBi": {
+										"id": "5Op8lMLDL_U1ojBnZNNBi",
+										"alias": "Ростовская область",
+										"order": 62,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ростовская область"
+									},
+									"6mXa5w77iLAHxqWQfCEKe": {
+										"id": "6mXa5w77iLAHxqWQfCEKe",
+										"alias": "Республика Бурятия",
+										"order": 48,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Бурятия"
+									},
+									"6rkV1j_XABMIJjaXB_DnG": {
+										"id": "6rkV1j_XABMIJjaXB_DnG",
+										"alias": "Пензенская область",
+										"order": 41,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Пензенская область"
+									},
+									"7vweOcWlBeT6QEBS079uW": {
+										"id": "7vweOcWlBeT6QEBS079uW",
+										"alias": "Новосибирская область",
+										"order": 37,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Новосибирская область"
+									},
+									"8PxMFFVkxisW3pP-CBk7z": {
+										"id": "8PxMFFVkxisW3pP-CBk7z",
+										"alias": "Новгородская область",
+										"order": 36,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Новгородская область"
+									},
+									"8wX4DjK-g1kxu1NnQx_v-": {
+										"id": "8wX4DjK-g1kxu1NnQx_v-",
+										"alias": "Ярославская область",
+										"order": 85,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ярославская область"
+									},
+									"9nv26Rs3I9_wxF5-UIvyh": {
+										"id": "9nv26Rs3I9_wxF5-UIvyh",
+										"alias": "Кабардино-Балкарская Республика",
+										"order": 16,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Кабардино-Балкарская Республика"
+									},
+									"BwCEYuEyxnvSv54EMZLv-": {
+										"id": "BwCEYuEyxnvSv54EMZLv-",
+										"alias": "Республика Ингушетия",
+										"order": 50,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Ингушетия"
+									},
+									"C3EzWKh3nYGxW30V8Gcm0": {
+										"id": "C3EzWKh3nYGxW30V8Gcm0",
+										"alias": "Костромская область",
+										"order": 23,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Костромская область"
+									},
+									"DJabg-HHLDd3kCnkXuFkj": {
+										"id": "DJabg-HHLDd3kCnkXuFkj",
+										"alias": "Орловская область",
+										"order": 40,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Орловская область"
+									},
+									"DkJZ-f-Gn04qpad01v7lL": {
+										"id": "DkJZ-f-Gn04qpad01v7lL",
+										"alias": "Владимирская область",
+										"order": 7,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Владимирская область"
+									},
+									"DxlmVi7LRazkQ4Qdxfbn2": {
+										"id": "DxlmVi7LRazkQ4Qdxfbn2",
+										"alias": "Омская область",
+										"order": 38,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Омская область"
+									},
+									"Eo_ErQjNP-wokdUxmwYR1": {
+										"id": "Eo_ErQjNP-wokdUxmwYR1",
+										"alias": "г. Москва",
+										"order": 86,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "г. Москва"
+									},
+									"GLDmQZlwYKpi5kKrCz8CF": {
+										"id": "GLDmQZlwYKpi5kKrCz8CF",
+										"alias": "Камчатский край",
+										"order": 19,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Камчатский край"
+									},
+									"HOaXfTz3wOK7VZLFiV8aP": {
+										"id": "HOaXfTz3wOK7VZLFiV8aP",
+										"alias": "Республика Татарстан (Татарстан)",
+										"order": 59,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Татарстан (Татарстан)"
+									},
+									"JNCngUe2GkbY0vi2NpC2Z": {
+										"id": "JNCngUe2GkbY0vi2NpC2Z",
+										"alias": "Курганская область",
+										"order": 26,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Курганская область"
+									},
+									"JnIgaTl1_M5R6CX38JYg3": {
+										"id": "JnIgaTl1_M5R6CX38JYg3",
+										"alias": "Чукотский автономный округ",
+										"order": 83,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Чукотский автономный округ"
+									},
+									"MBr6aFr3ix3X_YL7KN38x": {
+										"id": "MBr6aFr3ix3X_YL7KN38x",
+										"alias": "Алтайский край",
+										"order": 1,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Алтайский край"
+									},
+									"MHBTciCExoTL3TG5_cF_X": {
+										"id": "MHBTciCExoTL3TG5_cF_X",
+										"alias": "Самарская область",
+										"order": 64,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Самарская область"
+									},
+									"PZD45eOPt5qKCuqEGcuO5": {
+										"id": "PZD45eOPt5qKCuqEGcuO5",
+										"alias": "Челябинская область",
+										"order": 80,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Челябинская область"
+									},
+									"Q0S-Kr-CuWCjAYoQTh-MI": {
+										"id": "Q0S-Kr-CuWCjAYoQTh-MI",
+										"alias": "Белгородская область",
+										"order": 5,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Белгородская область"
+									},
+									"Qd0lCwew3C-7wjTFO2xjT": {
+										"id": "Qd0lCwew3C-7wjTFO2xjT",
+										"alias": "Ханты-Мансийский автономный округ - Югра",
+										"order": 79,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ханты-Мансийский автономный округ - Югра"
+									},
+									"QdlxwCqP6PBxA4hOyKR78": {
+										"id": "QdlxwCqP6PBxA4hOyKR78",
+										"alias": "Республика Калмыкия",
+										"order": 51,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Калмыкия"
+									},
+									"R6zTElA3jaU-DO13xME3G": {
+										"id": "R6zTElA3jaU-DO13xME3G",
+										"alias": "Республика Башкортостан",
+										"order": 47,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Башкортостан"
+									},
+									"Tx-3OShS2eiEVbNbSvGvF": {
+										"id": "Tx-3OShS2eiEVbNbSvGvF",
+										"alias": "Мурманская область",
+										"order": 33,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Мурманская область"
+									},
+									"UC_sx62eB50AHFqaIvbAf": {
+										"id": "UC_sx62eB50AHFqaIvbAf",
+										"alias": "Республика Марий Эл",
+										"order": 55,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Марий Эл"
+									},
+									"UHOiUjKSfkVC4Vu4jEetd": {
+										"id": "UHOiUjKSfkVC4Vu4jEetd",
+										"alias": "Вологодская область",
+										"order": 9,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Вологодская область"
+									},
+									"VkgKC_kOrNHnwU6aq8Qen": {
+										"id": "VkgKC_kOrNHnwU6aq8Qen",
+										"alias": "Астраханская область",
+										"order": 4,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Астраханская область"
+									},
+									"XM4msjbEAbhyjy3LvGZ_N": {
+										"id": "XM4msjbEAbhyjy3LvGZ_N",
+										"alias": "Калужская область",
+										"order": 18,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Калужская область"
+									},
+									"XbNA4FCSTOqRfUFUqegcJ": {
+										"id": "XbNA4FCSTOqRfUFUqegcJ",
+										"alias": "Республика Карелия",
+										"order": 52,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Карелия"
+									},
+									"Y8hjypzMzfZ94JA3BDS95": {
+										"id": "Y8hjypzMzfZ94JA3BDS95",
+										"alias": "Карачаево-Черкесская Республика",
+										"order": 20,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Карачаево-Черкесская Республика"
+									},
+									"Ylfzd100z5YCuHSkKImnm": {
+										"id": "Ylfzd100z5YCuHSkKImnm",
+										"alias": "Тюменская область",
+										"order": 75,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Тюменская область"
+									},
+									"YvZQv3V_e2DDGM50z9OAp": {
+										"id": "YvZQv3V_e2DDGM50z9OAp",
+										"alias": "Чувашская Республика - Чувашия",
+										"order": 82,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Чувашская Республика - Чувашия"
+									},
+									"ZYljUZ3Z9pHc_6BaP14HS": {
+										"id": "ZYljUZ3Z9pHc_6BaP14HS",
+										"alias": "г. Севастополь",
+										"order": 87,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "г. Севастополь"
+									},
+									"_Woi3xHVK-VMV7urmrf6b": {
+										"id": "_Woi3xHVK-VMV7urmrf6b",
+										"alias": "Республика Коми",
+										"order": 53,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Коми"
+									},
+									"_gGmOiAH-UNLO8auKqEWc": {
+										"id": "_gGmOiAH-UNLO8auKqEWc",
+										"alias": "Тамбовская область",
+										"order": 71,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Тамбовская область"
+									},
+									"_iaBZHA3nKej0U74SCpLC": {
+										"id": "_iaBZHA3nKej0U74SCpLC",
+										"alias": "Удмуртская Республика",
+										"order": 76,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Удмуртская Республика"
+									},
+									"aP0tRTY0tYpfCwZpfBmNT": {
+										"id": "aP0tRTY0tYpfCwZpfBmNT",
+										"alias": "Чеченская Республика",
+										"order": 81,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Чеченская Республика"
+									},
+									"aR8U5PgCLNXGEAkRUkvJc": {
+										"id": "aR8U5PgCLNXGEAkRUkvJc",
+										"alias": "Республика Тыва",
+										"order": 60,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Тыва"
+									},
+									"awlF191Xq1bG97W1lymXr": {
+										"id": "awlF191Xq1bG97W1lymXr",
+										"alias": "Пермский край",
+										"order": 42,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Пермский край"
+									},
+									"b5D_FColY3_qrHJ8Yiy73": {
+										"id": "b5D_FColY3_qrHJ8Yiy73",
+										"alias": "Ставропольский край",
+										"order": 70,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ставропольский край"
+									},
+									"dA5yTHYuWRxqf5Pdaqc95": {
+										"id": "dA5yTHYuWRxqf5Pdaqc95",
+										"alias": "Саратовская область",
+										"order": 66,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Саратовская область"
+									},
+									"da-MU64oA0NAmhFAEY12o": {
+										"id": "da-MU64oA0NAmhFAEY12o",
+										"alias": "Псковская область",
+										"order": 44,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Псковская область"
+									},
+									"dmL0A3NaqIvTUeKG9ougF": {
+										"id": "dmL0A3NaqIvTUeKG9ougF",
+										"alias": "Липецкая область",
+										"order": 29,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Липецкая область"
+									},
+									"dsY_bJAiPGqbSzHCaNZlW": {
+										"id": "dsY_bJAiPGqbSzHCaNZlW",
+										"alias": "Брянская область",
+										"order": 6,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Брянская область"
+									},
+									"e0z3d_813goGAp_X76AsT": {
+										"id": "e0z3d_813goGAp_X76AsT",
+										"alias": "Республика Мордовия",
+										"order": 56,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Мордовия"
+									},
+									"ey7FgubIcJXZUK_YgDLTR": {
+										"id": "ey7FgubIcJXZUK_YgDLTR",
+										"alias": "Республика Адыгея (Адыгея)",
+										"order": 45,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Адыгея (Адыгея)"
+									},
+									"gh9hb6DUqlNZH0yn8sy0k": {
+										"id": "gh9hb6DUqlNZH0yn8sy0k",
+										"alias": "Луганская область",
+										"order": 30,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Луганская область"
+									},
+									"gxZrC8JRYMbjW7AFoDl3l": {
+										"id": "gxZrC8JRYMbjW7AFoDl3l",
+										"alias": "Кемеровская область",
+										"order": 21,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Кемеровская область"
+									},
+									"h2KWXRbOr4nHJHc-ZLo7r": {
+										"id": "h2KWXRbOr4nHJHc-ZLo7r",
+										"alias": "Ненецкий автономный округ",
+										"order": 34,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ненецкий автономный округ"
+									},
+									"hasqEoC9CNoZvEgnya3SP": {
+										"id": "hasqEoC9CNoZvEgnya3SP",
+										"alias": "Воронежская область",
+										"order": 10,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Воронежская область"
+									},
+									"i2jwJiP0mpMsNNu1FS9lL": {
+										"id": "i2jwJiP0mpMsNNu1FS9lL",
+										"alias": "Рязанская область",
+										"order": 63,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Рязанская область"
+									},
+									"ijEzT5eqJ563UztKQBCDp": {
+										"id": "ijEzT5eqJ563UztKQBCDp",
+										"alias": "Забайкальский край",
+										"order": 13,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Забайкальский край"
+									},
+									"oOFEX9Af67T6y30GalnRf": {
+										"id": "oOFEX9Af67T6y30GalnRf",
+										"alias": "Ульяновская область",
+										"order": 77,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ульяновская область"
+									},
+									"pPZbsKciXr119kx3988nt": {
+										"id": "pPZbsKciXr119kx3988nt",
+										"alias": "Тверская область",
+										"order": 72,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Тверская область"
+									},
+									"pXxogDUoXZedYIwU2cSKE": {
+										"id": "pXxogDUoXZedYIwU2cSKE",
+										"alias": "Нижегородская область",
+										"order": 35,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Нижегородская область"
+									},
+									"qYcdo9nVl4OAyueAIAesq": {
+										"id": "qYcdo9nVl4OAyueAIAesq",
+										"alias": "Республика Крым",
+										"order": 54,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Крым"
+									},
+									"r53tKF4bV5prra94mGUtp": {
+										"id": "r53tKF4bV5prra94mGUtp",
+										"alias": "Республика Алтай",
+										"order": 46,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Алтай"
+									},
+									"r8h8Bw9VWZyKkBR1RBXVy": {
+										"id": "r8h8Bw9VWZyKkBR1RBXVy",
+										"alias": "Ивановская область",
+										"order": 14,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ивановская область"
+									},
+									"tUZ-8hkhCo1IpFiyBDon1": {
+										"id": "tUZ-8hkhCo1IpFiyBDon1",
+										"alias": "Калининградская область",
+										"order": 17,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Калининградская область"
+									},
+									"u8iexDqRs9H-DTIZgiJk0": {
+										"id": "u8iexDqRs9H-DTIZgiJk0",
+										"alias": "Приморский край",
+										"order": 43,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Приморский край"
+									},
+									"uILaCxtnPfsd001VFuhlJ": {
+										"id": "uILaCxtnPfsd001VFuhlJ",
+										"alias": "Смоленская область",
+										"order": 69,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Смоленская область"
+									},
+									"vAxbANNRa4Y0CQGCBHaCd": {
+										"id": "vAxbANNRa4Y0CQGCBHaCd",
+										"alias": "Ленинградская область",
+										"order": 28,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Ленинградская область"
+									},
+									"vBFPdnGeIlrnAp1jRBJqy": {
+										"id": "vBFPdnGeIlrnAp1jRBJqy",
+										"alias": "Республика Хакасия",
+										"order": 61,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Хакасия"
+									},
+									"wN_rNhEqfWYy0qkZyAetN": {
+										"id": "wN_rNhEqfWYy0qkZyAetN",
+										"alias": "Тульская область",
+										"order": 74,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Тульская область"
+									},
+									"yPQ4imEwUWxAukqcLsZRH": {
+										"id": "yPQ4imEwUWxAukqcLsZRH",
+										"alias": "Республика Дагестан",
+										"order": 49,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Дагестан"
+									},
+									"yWqf8dRopL8gzecwwqGax": {
+										"id": "yWqf8dRopL8gzecwwqGax",
+										"alias": "Сахалинская область",
+										"order": 67,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Сахалинская область"
+									},
+									"ydcPRyP3Dq29D1vGHo4rx": {
+										"id": "ydcPRyP3Dq29D1vGHo4rx",
+										"alias": "Кировская область",
+										"order": 22,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Кировская область"
+									},
+									"yygAS4Ht_DF5wd_2A7CBh": {
+										"id": "yygAS4Ht_DF5wd_2A7CBh",
+										"alias": "Волгоградская область",
+										"order": 8,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Волгоградская область"
+									},
+									"z4Zp4dO9gqPQgv4zWb82L": {
+										"id": "z4Zp4dO9gqPQgv4zWb82L",
+										"alias": "Свердловская область",
+										"order": 68,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Свердловская область"
+									},
+									"zY_bHR88thT14o3SXZY3y": {
+										"id": "zY_bHR88thT14o3SXZY3y",
+										"alias": "Республика Саха (Якутия)",
+										"order": 57,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Республика Саха (Якутия)"
+									},
+									"znDJ-bG21uo-2IZ8kSHxW": {
+										"id": "znDJ-bG21uo-2IZ8kSHxW",
+										"alias": "Курская область",
+										"order": 27,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "Курская область"
+									},
+									"ALL_OTHER_FILTER_VALUES": {
+										"id": "ALL_OTHER_FILTER_VALUES",
+										"alias": "others",
+										"order": 10000,
+										"checked": true,
+										"visible": false,
+										"fieldValue": "ALL_OTHER_FILTER_VALUES"
+									}
+								}
+							},
+							"gmzolE9iXTU5PkFZqxzO2": {
+								"id": "gmzolE9iXTU5PkFZqxzO2",
+								"type": "Range",
+								"field": "min_number_floors",
+								"order": 7,
+								"title": "Минимальное кол-во этажей",
+								"values": {
+									"config": {
+										"max": 78,
+										"min": 0
+									},
+									"values": {
+										"max": 78,
+										"min": 0
+									}
+								}
+							},
+							"iS6r1AIPYhehROZjtqI6z": {
+								"id": "iS6r1AIPYhehROZjtqI6z",
+								"type": "Range",
+								"field": "living_area",
+								"order": 4,
+								"title": "Жилая площадь",
+								"values": {
+									"config": {
+										"max": 142978.7,
+										"min": 0
+									},
+									"values": {
+										"max": 142978.7,
+										"min": 0
+									}
+								}
+							},
+							"uIovK_RxyddTFKu5Zhs4z": {
+								"id": "uIovK_RxyddTFKu5Zhs4z",
+								"type": "Checkbox",
+								"field": "green_house",
+								"order": 3,
+								"title": "Энергоэффективный ли дом (green house)",
+								"values": {
+									"2PKQRfX9EE1YD9oQEFCZA": {
+										"id": "2PKQRfX9EE1YD9oQEFCZA",
+										"alias": "нет",
+										"order": 2,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "нет"
+									},
+									"joIqXYTNEi5p5GG-vFXya": {
+										"id": "joIqXYTNEi5p5GG-vFXya",
+										"alias": "да",
+										"order": 1,
+										"checked": false,
+										"visible": true,
+										"fieldValue": "да"
+									},
+									"ALL_OTHER_FILTER_VALUES": {
+										"id": "ALL_OTHER_FILTER_VALUES",
+										"alias": "others",
+										"order": 10000,
+										"checked": true,
+										"visible": false,
+										"fieldValue": "ALL_OTHER_FILTER_VALUES"
+									}
+								}
+							},
+							"xEf1MMYsv3JyQ0AxFYkg2": {
+								"id": "xEf1MMYsv3JyQ0AxFYkg2",
+								"type": "Range",
+								"field": "number_apartments",
+								"order": 6,
+								"title": "Кол-во квартир",
+								"values": {
+									"config": {
+										"max": 2879,
+										"min": 0
+									},
+									"values": {
+										"max": 2879,
+										"min": 0
+									}
+								}
+							}
+						}
+					}
+				},
+				"geometry": {
+					"type": "Point",
+					"fieldName": "geom"
+				},
+				"identify": true,
+				"namespace": "gis",
+				"showLegend": true,
+				"description": "Объекты нового жилищного строительства (новостройки) до 2031 года:\r\n  - Название\r\n  - Регион\r\n  - Полный адрес\r\n  - Застройщик\r\n  - Год сдачи\r\n  - Минимальное количество этажей\r\n  - Максимальное количество этажей\r\n  - Количество квартир\r\n  - Жилая площадь\r\n  - Энергоэффективность дома\r\n  - Статус\r\n  - Номер проектной декларации\r\n  - Население",
+				"resourceUrl": "http://gis.flexatel.xyz/geoserver/rest/workspaces/gis/datastores/db/featuretypes/builder_pro_new_buildings.json",
+				"geoserverUrl": "https://gis.flexatel.xyz/geoserver"
+			}
+		],
+		"apiUrl": "https://gis.flexatel.xyz",
+		"widgets": [
+			{
+				"id": "openAI",
+				"title": "Geodata AI",
+				"visible": true,
+				"hideOnViewer": true
+			},
+			{
+				"id": "baseMaps",
+				"title": "Базовые карты",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "layersScale",
+				"title": "Видимость слоев",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "selection",
+				"title": "Выборка слоев",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "dashboards",
+				"title": "Дашборды",
+				"active": false,
+				"config": {
+					"settings": {
+						"position": "RightSidebar",
+						"showInViewer": false,
+						"useFiltering": true,
+						"useSelection": true
+					},
+					"dashboards": []
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "zoomToLayer",
+				"title": "Зумирование к слою",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "zoom",
+				"title": "Изменение масштаба",
+				"config": {
+					"showHomeButton": true
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "changeLayersOrder",
+				"title": "Изменение порядка слоев",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "changeProjection",
+				"title": "Изменение проекции",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "measurementArea",
+				"title": "Измерение площадей",
+				"config": {
+					"units": "Kilometer"
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "measurementLength",
+				"title": "Измерение расстояний",
+				"config": {
+					"units": "Kilometer"
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "mapInfo",
+				"title": "Информация о карте",
+				"config": {
+					"showInfoOnOpenMap": false
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "storybook",
+				"title": "Истории на карте",
+				"config": {
+					"timeInterval": 15,
+					"timeAnimation": 2
+				},
+				"visible": false,
+				"hideOnViewer": null
+			},
+			{
+				"id": "insetMap",
+				"title": "Карта-врезка",
+				"config": {
+					"size": "Small",
+					"showMap": false
+				},
+				"visible": false,
+				"hideOnViewer": null
+			},
+			{
+				"id": "graticule",
+				"title": "Координатная сетка",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "mousePosition",
+				"title": "Координаты курсора",
+				"config": {
+					"units": "geographic",
+					"precision": 4
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "legend",
+				"title": "Легенда",
+				"config": {
+					"showInView": false
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "scaleLine",
+				"title": "Масштабная линейка",
+				"config": {
+					"bar": false,
+					"text": false,
+					"steps": 4,
+					"units": "metric"
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "myLocation",
+				"title": "Моё местоположение",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "print",
+				"title": "Печать",
+				"config": {
+					"showSettingsAlert": true
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "search",
+				"title": "Поиск",
+				"config": {
+					"useExtent": false,
+					"dataProviders": {
+						"Geocoder": {
+							"type": "Geocoder",
+							"apiKeys": [
+								{
+									"id": "Flexatel",
+									"type": "Organization",
+									"alias": "Flexatel",
+									"order": 0
+								},
+								{
+									"id": "Yandex",
+									"type": "Yandex",
+									"alias": "Yandex",
+									"order": 1,
+									"apiKey": ""
+								},
+								{
+									"id": "Google",
+									"type": "Google",
+									"alias": "Google",
+									"order": 2,
+									"apiKey": ""
+								},
+								{
+									"id": "2GIS",
+									"type": "Common",
+									"alias": "2GIS",
+									"order": 3,
+									"apiKey": ""
+								}
+							],
+							"activeGeocoder": "Flexatel",
+							"isGeocodeActive": false
+						},
+						"MapLayers": {
+							"type": "MapLayers",
+							"searchLayers": []
+						}
+					},
+					"useLayerFilter": false
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "fullScreenMode",
+				"title": "Полноэкранный режим",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "changeLayerOpacity",
+				"title": "Прозрачность слоя",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "elevationProfile",
+				"title": "Профиль рельефа",
+				"config": {
+					"chart": {
+						"fillColor": {
+							"a": 0.3,
+							"b": 226,
+							"g": 95,
+							"r": 58
+						},
+						"lineColor": {
+							"a": 1,
+							"b": 226,
+							"g": 95,
+							"r": 58
+						},
+						"verticalUnit": "Meter",
+						"horizontalUnit": "Kilometer"
+					},
+					"statistic": {
+						"avgHeight": true,
+						"maxHeight": true,
+						"minHeight": true,
+						"totalLength": true
+					}
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "layersCompare",
+				"title": "Сравнение слоев",
+				"config": {
+					"position": "2",
+					"displayType": "Vertical"
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "homeButton",
+				"title": "Стартовый экстент",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "attributesTable",
+				"title": "Таблица атрибутов",
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "timeBar",
+				"title": "Таймслайдер",
+				"config": {
+					"step": 1,
+					"limits": {
+						"max": "Mon Oct 28 2024 04:30:49 GMT+0300",
+						"min": "Mon Oct 28 2024 04:30:49 GMT+0300"
+					},
+					"timeScale": "year",
+					"initialDate": null,
+					"isTimebarOpen": false
+				},
+				"visible": false,
+				"hideOnViewer": null
+			},
+			{
+				"id": "spatialAnalytics",
+				"title": "Транспортная аналитика",
+				"config": {
+					"TSP": {
+						"type": "TSP",
+						"apiKeys": {
+							"Flexatel": {
+								"id": "Flexatel",
+								"type": "Organization"
+							}
+						},
+						"activeGeocoder": "Flexatel",
+						"isActiveSettings": true
+					},
+					"Routes": {
+						"type": "Routes",
+						"apiKeys": {
+							"Flexatel": {
+								"id": "Flexatel",
+								"type": "Organization"
+							}
+						},
+						"activeGeocoder": "Flexatel",
+						"isActiveSettings": true
+					},
+					"Isochrone": {
+						"type": "Isochrone",
+						"apiKeys": {
+							"Flexatel": {
+								"id": "Flexatel",
+								"type": "Organization"
+							}
+						},
+						"activeGeocoder": "Flexatel",
+						"isActiveSettings": true
+					}
+				},
+				"visible": true,
+				"hideOnViewer": null
+			},
+			{
+				"id": "layersExport",
+				"title": "Экспорт слоев",
+				"visible": true,
+				"hideOnViewer": null
+			}
+		]
+	},
+	"name": "Моя карта",
+	"description": "",
+	"logo": "",
+	"logo_compact": "",
+	"logo_link": "https://flexgis.ru/",
+	"is_public": false
+}
